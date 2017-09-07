@@ -33,13 +33,7 @@ $(document).ready(function(){
 
     if ($('.genplan').length >= 1) {
         $('.genplan__mobile-link').fancybox({
-            // iframe: {
-            //    css : {
-            //         width  : '320px',
-            //     },
-            // 'scrolling': 'yes'                     
-            // },
-            
+
             'type': 'iframe',
             iframe :{
                css : {
@@ -50,6 +44,31 @@ $(document).ready(function(){
 
         });        
     }            
+
+    // news page filter script
+
+    var filter_row_1 = $('.news-filter .row:first-of-type .col'),
+        filter_row_2 = $('.news-filter .row:last-of-type .col');
+        
+        filter_row_1.click(function() {
+            filter_row_1.removeClass('active');
+            $(this).toggleClass('active');
+        })
+        filter_row_2.click(function() {
+            filter_row_2.removeClass('active');
+            $(this).toggleClass('active');
+        })        
+
+    // news page filter sctipt open/close 
+
+    if ($(window).width() <=320) {
+        filter_row_1.first().click(function() {
+            filter_row_1.parent().find('.wrap').toggleClass('open')
+        });     
+        filter_row_2.first().click(function() {
+            filter_row_2.parent().find('.wrap').toggleClass('open')
+        });         
+    }
 
 
 });    
