@@ -1,0 +1,33 @@
+.footer {
+	width: 100%;
+	border-top: 1px solid $brownColor;
+	font-size: 14px;
+	color: $accentFontColor;
+	margin-top: auto;
+	background-color: $backgroundColor;
+	&__wrapper {
+		height: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__left-column {
+		
+		.phone {
+			font-size: 24px;
+			font-weight: bold;
+			font-family: $accentFont;
+			margin-bottom: 5px;
+			display: block;
+		}
+	}
+
+	&__right-column {
+		display: flex;
+		flex-direction: column;
+		a {
+			margin-top: 5px;
+		}
+	}	
+
+}

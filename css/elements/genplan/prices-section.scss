@@ -1,0 +1,194 @@
+.prices-section {
+	width: 100%;
+	position: relative;
+	&__wrapper {
+
+	}
+	&__table-wrap {
+		box-sizing: border-box;
+		padding-top: 68px;
+		padding-right: 66px;
+		position: relative;
+		width: 994px;
+		z-index: 1;
+		margin-top: -216px;
+		&:after {
+			content: '';
+			position: absolute;
+			left: -40vw;
+			background-color: #fff;
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+			right: 0;
+			bottom: 0;
+			top: 0;
+			z-index: -1;
+		}
+	}
+	&__back-image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: calc(50%);
+		height: 75%;
+		img {
+			@extend %img;
+		}
+	}
+
+	&__table-desc {
+		font-style: italic;
+		font-size: 20px;
+		font-family: $accentFont;
+		margin-bottom: 51px;
+	}
+	&__table-filter {
+		position: relative;
+		display: flex;
+		padding: 20px 0 0 ;
+		margin-bottom: 41px;
+	    margin-right: -67px;
+	    z-index: 1;
+	    &:after {
+	    	content: '';
+	    	background-color: $backgroundColor;
+			@extend %abs-pos;
+			z-index: -1;
+			left: -40vw;
+	    }
+		input {
+			height: 32px;
+			border: 1px solid $brownColor;
+			background-color: #fff;
+			width: 100px;
+			overflow: hidden;
+			text-align: center;
+		    padding: 0 4px;
+		    margin: 0 7px;
+		    box-sizing: border-box;
+		    font-size: 15px;
+			&::placeholder {
+				color: #cccccc;				
+			}
+		}
+	}
+	.row {
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+		height: 32px;
+		label {
+			width: 78px;
+		}
+		.control_indicator {
+			height: 32px;
+			width: 32px;
+			position: static;
+			margin-right: 20px;
+			&:after {
+			    left: 12px;
+			    top: 3px;
+			    width: 8px;
+			    height: 21px;				
+			}
+		}
+		.control {
+			margin: 0;
+			padding: 0;
+			width: auto;
+		}		
+	}
+	.left-column, .right-column {
+		display: flex;
+		flex-direction: column;
+	}
+	.left-column {
+		margin-right: 76px;
+	}
+	.big-title {
+		margin-bottom: 13px;
+	}
+
+}
+
+// table styles
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 350px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 3px;
+  .read-more {
+  	font-size: 13px;
+  	letter-spacing: 2px;
+  	color: transparent;
+  }
+  a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;  	
+  }
+  tr:not(:first-of-type) {
+  	cursor: pointer;
+  	&:hover {
+  		background-color: $backgroundColor;
+  		.read-more {
+  			color: $brownColor;
+  			&:hover {
+  				color: $brownColorHover;
+  			}
+  		}
+
+  	}
+  }
+  tr:last-of-type {
+  	td {
+  		border-color: transparent;
+  	}
+  }
+}
+table tr th,
+table tr td {
+	border-bottom: 1px solid $brownColor;
+	padding: 13px 0;
+	position: relative;
+}
+
+table tr th {
+  text-align: left;
+  border-bottom: 3px solid $brownColor;	;
+  width: 150px;
+  @extend .link;
+  cursor: pointer;
+  &:last-of-type {
+  	cursor: default;
+  } 
+}
+table tr td:first-of-type {
+	padding-left: 15px;
+}
+
+#number {
+	width: 63px;
+	padding-left: 15px;
+}
+
+#area {
+	
+}
+
+#item-price {
+
+}
+
+#all-price {
+
+}
+
+#note {
+
+}
+

@@ -1,0 +1,106 @@
+// import reset css
+@import "elements/common/reset";
+
+// import fonts
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif:400,400i,700');
+
+// variables
+$mainFont: 'PT Sans', sans-serif;
+$accentFont: 'PT Serif', serif;
+
+$fontColor: #595959;
+$accentFontColor: #202325;
+$blueColor: #009bc0;
+$blueColorHover: #62c5de;
+$brownColor: #bd9c69;
+$brownColorHover: #e3c79c;
+$backgroundColor: #f6f6f6;
+
+// mixins
+@mixin trans {
+	transition: 0.3s;	
+}
+
+// plaseholders
+%column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
+}
+%img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;	
+}
+%abs-pos {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;	
+}
+
+// import svg/png sprites
+@import "sprite/svg_sprite";
+@import "sprite/svg_sprite-genplan";
+@import "sprite/png_sprite";
+
+// import slider stylesheet
+@import "elements/common/slide_plugin";
+
+// main body stylesheet
+body {
+	font-size: 16px;
+	font-family: $mainFont;
+	color: $fontColor;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	min-height: 100vh;
+	position: relative;
+	// overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+
+// import common elements stylesheet
+@import "elements/common/elements";
+
+// import header
+@import "elements/common/header";
+
+// import footer
+@import "elements/common/footer";
+
+// import top image for several pages
+@import "elements/common/top-image";
+
+// import callback form
+@import "elements/common/callback";
+
+
+// import index page elements
+@import "elements/index/main-page-text-section";
+@import "elements/index/news-section";
+@import "elements/index/image-section";
+@import "elements/index/main-slider";
+
+// import homes page elements
+@import "elements/homes/homes-list";
+@import "elements/homes/home_block";
+@import "elements/homes/page-bottom-desc";
+
+// import inner home elements
+@import "elements/inner-home/carousel";
+@import "elements/inner-home/info-section";
+
+// import genplan page stylesheet
+@import "elements/genplan/genplan";
+@import "elements/genplan/discont-section";
+@import "elements/genplan/prices-section";
+@import "elements/genplan/genplan-description-section";
+
+// import media queries
+@import "media/media";

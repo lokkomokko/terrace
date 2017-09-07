@@ -1,0 +1,24 @@
+.info-section {
+	width: 100%;
+	background-color: #fff;
+	padding-top: 63px;
+	box-sizing: border-box;
+	&__wrapper {
+		position: relative;
+	}
+	&__back-link  {
+		font-size: 0.875rem;
+		letter-spacing: 0.145625rem;
+		margin: 92px 0;
+		display: block;
+	}
+	&__desc, &__equipmentm, &__common-info {
+		width: 100%;
+		max-width: 648px;
+		margin-bottom: 56px;
+	}
+
+	.text-content {
+		line-height: 30px;
+	}
+}

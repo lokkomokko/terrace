@@ -1,0 +1,72 @@
+.main-slider {
+	height: 596px;
+	width: 100%;
+	position: relative;
+	border-bottom: 4px solid $brownColor;
+	&__wrapper, .slick-list, .slick-track {
+		height: 100%;
+	}
+	&__item {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		will-change: transform;
+		&__desc {
+			position: absolute;
+			top: 0;
+		    box-sizing: border-box;
+			bottom: 0;
+			right: 0;
+			width: 50%;
+			color: #fff;
+			font-family: $accentFont;			
+			font-weight: bold;
+			display: flex;
+			flex-direction: column;
+			margin-top: 173px;
+			padding: 40px;
+			cursor: default;
+			background-color: rgba(0,0,0,.3);
+			h2 {
+				margin-bottom: 30px;
+				font-weight: bold;
+				font-size: 3.5rem;
+				line-height: 3.75rem;
+				text-shadow: 0 2px 4px rgba(0, 0, 0, 0.63);
+			}
+			p {
+				font-size: 22px;
+			}
+			span {
+				margin-top: auto;
+				text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+				letter-spacing: 0.125rem;
+				cursor: pointer;
+			}
+		}
+		&__separator {
+			width: 60px;
+			height: 2px;
+			background-color: #fff;
+		}
+		img {
+			height: 100%;
+			width: 100%;			
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+	&__nav-wrap {
+		position: relative;
+	}	
+	.slick-prev, .slick-next {
+		position: absolute;
+		z-index: 50;
+		bottom: -19px;
+		right: 0;
+		cursor: pointer;
+	}
+	.slick-prev {
+		right: 54px;
+	}
+}

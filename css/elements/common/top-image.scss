@@ -1,0 +1,47 @@
+.top-image {
+	width: 100%;
+	height: 596px;
+	box-sizing: border-box;
+	position: relative;
+	padding-bottom: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;    
+    z-index: 1;    
+	&__image {
+		@extend %abs-pos;
+		@extend %img;
+		z-index: -1;
+	}
+	&__title {
+		z-index: 2;
+		box-sizing: border-box;
+		padding-left: 152px;
+		max-width: 967px;
+		position: relative;
+		&:after {
+			content: '';
+			height: 1px;
+			background-color: #fff;
+			position: absolute;
+			top: 37px;
+			left: 0;
+			width: 118px;
+		}
+	}
+	&__breadcrumbs {
+		color: #fff;
+		padding-left: 152px;
+		margin-bottom: 20px;
+		a {
+			font-weight: bold;
+			font-size: 0.75rem;
+			letter-spacing: 0.125rem;
+			text-decoration: underline;
+			text-transform: uppercase;				
+			&:hover {
+				text-decoration: none;
+			}
+		}	
+	}
+}

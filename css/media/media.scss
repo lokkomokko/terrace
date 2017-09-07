@@ -1,0 +1,653 @@
+
+@media (max-width: 1440px) {
+	.main-wrapper {
+		width: 1440px;
+		overflow-x: hidden; 
+		position: relative;
+	}
+}
+@media (max-width: 1024px) {
+	.main-wrapper {
+		width: 1024px;
+	}	
+	.container {
+		width: 940px;
+	}
+	.header {
+		&__call-block {
+			position: absolute;
+			display: flex;
+			top: 31px;
+	        right: 200px;		
+		}
+		&__user-cabinet {
+			top: -11px;
+		}
+		&__logo {
+		    padding-bottom: 6px;
+		    height: auto;
+		}
+		&__content {
+			justify-content: flex-end;
+		    padding: 47px 0 26px 39px;
+		}
+		&__desc {
+		    margin-top: 16px;	
+		    margin-right: 0;		
+		}
+		&__phone-number {
+			margin-right: 21px;
+		}
+		&__desc__title {
+		    font-size: 23px;
+		    letter-spacing: 1.81px;			
+		}
+	}
+	.news-section__background-text {
+	    letter-spacing: 18px;
+	    font-size: 169.7px;
+	}	
+	.italic-text {
+		font-size: 28px;
+	}
+	.footer__center-column {
+		width: 327px;
+		text-align: center;
+		line-height: 18px;
+	}
+	.top-image {
+
+		&__title {
+			padding-left: 42px;
+			&:after {
+				display: none;
+			}			
+		} 
+
+	}
+	.homes-list {
+		.home-block {
+		    flex-basis: calc(100% / 2);
+		    max-width: 454px;		
+		}
+		.brown_button {
+		    margin-top: auto;
+		    max-width: 100%;
+		}				
+	}
+	.page-bottom-desc {
+
+		&__text {
+			width: 738px;
+		}
+		&__image {
+			width: 786px;
+		}
+	}
+	.genplan__conventions-icons-wrapper {
+		display: none;
+	}
+	.genplan__bg {
+		background-position: calc(50% - 145.1px) calc(50% - 5px);
+	}
+	.discont-section {
+		&__price-row {
+			font-size: 4.375rem;
+		}
+	}
+	.prices-section__table-wrap {
+		width: 900px;
+	    padding-right: 43px;
+	}
+	.prices-section__table-filter {
+		margin-right: -43px;
+	}	
+
+}
+@media (max-width: 768px) and (min-width: 360px) {
+	.image-section {
+		&__wrapper {
+		    padding: 66px 0 74px;			
+		}
+		&__item {
+
+			&__name {
+				font-size: 3.75rem;
+				margin-bottom: 0;
+			}
+			&__desc {
+				font-size: 1rem;
+			}
+			span {
+				font-size: 1.875rem;
+			}
+		}
+	}
+	.png-sprite {
+		&__258, &__11, &__4, &__67 {
+			width: 156px;
+			height: 99px;
+			background-size: cover;
+		}
+		&__258 {
+			background-position: 0px -207px;			
+		}
+		&__11 {
+		    background-position: 0px -306px;			
+		}
+		&__4 {
+		    background-position: -0px -100px
+		}
+	}	
+
+
+}
+@media (max-width: 768px) {
+	.main-wrapper {
+		width: 768px;
+	}		
+	.container {
+		width: 720px;
+	}
+	.header {
+		&__logo {
+		    height: auto;
+		    padding: 11px 0;
+		    display: flex;
+		    margin-bottom: auto;
+		    margin-top: 24px;	
+	        align-items: baseline;
+	        padding-right: 25px;		
+            max-width: 85px;
+		    .icon {
+		    	margin-bottom: 0;
+		    }
+			p {
+				display: none;
+			}
+		}
+		&__content {
+			padding-left: 25px;
+		}
+		&__desc__title {
+		    margin: 0 8px;
+			font-size: 1.375rem;
+		}
+		&__nav {
+		    position: absolute;
+		    left: 0;
+		    right: 0;			
+		}
+		&__top {
+		    height: 83px;			
+		}
+		&__user-cabinet {
+			margin-left: 0;
+		}
+	}
+	.main-slider {
+		&__item {
+			&__desc {
+				width: 100%;
+				h2 {
+					font-size: 2.75rem;
+				}
+			}
+		}
+	}
+	.news-section {
+		height: 385px;
+		&__wrapper {
+		    padding-top: 82px;
+		    height: 385px;			
+		}
+		&__background-text {
+			font-size: 123.7px;
+		}
+		&__image {
+			display: none;
+		}
+	}	
+	.news-item {
+	    height: 272px;
+	}
+
+	.main-page-text-section {
+		&:after {
+			display: none;
+		}
+		&__wrapper {
+			border-top: 2px solid $brownColor;
+			flex-direction: column;
+		}
+		&__left-side {
+			position: relative;
+			padding-right: 0;
+		    margin-bottom: 67px;
+		}
+		&__right-side {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+			flex-basis: 100%;
+			padding-left: 0;
+		    margin-bottom: 25px;
+			&:after {
+				right: -100px;
+				left: -100px;
+			}
+		}
+		.italic-text {
+		    padding-top: 37px;			
+	        margin-bottom: 0;
+		}
+		.png-sprite__olen {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			z-index: -1;
+		}
+	}
+
+	.top-image {
+		padding-bottom: 47px;
+		&__title {
+			font-size: 3.25rem;
+			padding-left: 24px;
+			line-height: 3.75rem;
+		} 
+
+	}
+	.homes-list {
+		&__top-sect {
+		    margin-bottom: 50px;
+	        padding-bottom: 45px;			
+		}			
+		&__wrapper {
+		    padding-bottom: 20px;
+		}
+		.home-block {
+		    max-width: 345px;		
+		}		
+
+	}
+	.page-bottom-desc {
+		min-height: 100%;
+		margin-top: 0;
+		margin-bottom: 82px;
+		&__text {
+			width: 100%;
+			padding: 66px 24px 76px 24px;
+			position: static;
+		}
+		&__image {
+			display: none;
+		}
+	}	
+	.big-title {
+		&:before {
+			display: none;
+		}
+	}
+	.genplan__bg {
+		background-position: calc(50% - 34.1px) calc(50% - 5px);		
+	}
+	#pg {
+		left: -77px;
+	}
+	.genplan__conventions-rules p {
+		white-space: nowrap;
+	}
+	.genplan__conventions {
+		width: 258px;
+		margin-top: 165px;
+	    margin-right: -17px;
+	}
+	.genplan__title {
+		font-size: 3rem;
+		letter-spacing: 0.5rem;
+	    left: -479px;
+	    top: -122px;		
+	}
+	.discont-section__title p {
+		line-height: 1.875rem;
+	}
+	.discont-section__price-row p {
+		font-size: 3.5rem;
+		line-height: 1.5rem;
+	}
+	.genplan__conventions-desc-link {
+		line-height: 22px;
+	}
+	.prices-section__table-wrap {
+		width: 100%;
+		padding-right: 0;
+		&:after {
+			left: -50px;
+			right: -50px;
+		}
+	}
+	.prices-section__back-image {
+		display: none;
+	}
+	.genplan-description-section__back-image {
+		display: none;
+	}
+	.genplan-description-section__text {
+		margin-top: 0;
+	}
+
+}
+@media (max-width: 320px) {
+	.main-wrapper {
+		width: 320px;
+	}
+	.container {
+		width: 290px;
+	}
+	.header {
+		height: 80px;
+		&__content {
+			display: none;
+		}
+		&__logo {
+			margin: 0;
+			padding: 0;
+			border: none;
+			.icon {
+			    width: 45px;
+			    height: 39px;				
+			}
+		}
+		&__mobile-menu {
+			display: flex;
+			nav {
+				will-change: transform;
+				transform: translateX(320px);
+				transition: 0.3s all;
+				&.open {
+					transform: translateX(0);
+				}
+			}
+			p {
+				margin-right: 10px;
+				text-transform: uppercase;
+				letter-spacing: 0.1325rem;
+				font-size: 18px;
+				color: $accentFontColor;
+			}
+		}
+	}
+	.main-slider {
+		height: 360px;
+		&__item__desc {
+			margin-top: 80px;
+			padding-left: 16px;
+			padding-right: 16px;
+				h2 {
+					font-size: 1.625rem;
+					line-height: 1.875rem;
+					margin-bottom: 13px;
+				}
+				p {
+					font-size: 16px;
+				}
+		}
+		&__item__separator {
+			width: 128px;
+		}
+		&__item__more-link {
+			font-size: 16px;
+		}
+	}
+	.news-section {
+		height: auto;
+		&__wrapper {
+			flex-direction: column;
+			padding-top: 65px;
+			height: auto;
+		}
+		&__background-text {
+			position: static;
+			letter-spacing: 5.76px;
+			font-size: 48px;
+			color: $fontColor;
+			margin-bottom: 37px;
+		}
+
+	}
+	.news-item {
+		height: auto;
+		&__text {
+			max-height: 100%;
+		}
+		&__read-more {
+		    margin: 21px 0 41px;
+		    &:last-of-type {
+		    	margin-bottom: 15px;
+		    }				
+		}
+	}	
+	.image-section {
+		max-height: 100%;
+		&__wrapper {
+			flex-direction: column;
+			padding-top: 56px;
+			padding-bottom: 0;
+		}
+		&__item {
+			margin-bottom: 56px;
+		}
+
+	}
+	.italic-text {
+		font-size: 1.5rem;
+		line-height: 2.375rem;
+	}
+	.main-page-text-section {
+		&__left-side {
+			margin-bottom: 16px;
+		}
+		&__right-side {
+			padding-top: 31px;			
+		}
+		.png-sprite__olen {
+			position: static;
+		}
+		.big-title {
+			margin-bottom: 23px;
+		}
+	}
+	.big-title {
+		font-size: 2rem;
+		letter-spacing: 0.25rem;
+		&:before {
+			display: none;
+		}
+	}
+	.footer {
+		&__wrapper {
+		    flex-direction: column;
+		    height: auto;
+		    align-items: flex-start;			
+		    padding-top: 20px;
+		}
+		&__left-column {
+			margin-bottom: 20px;
+		}
+		&__right-column {
+			margin-bottom: 30px;
+		}
+		&__center-column {
+			text-align: left;
+			margin-bottom: 20px;
+		}
+	}
+	.h1-title {
+		font-size: 1.625rem;
+		line-height: 1.875rem;
+	}	
+	.top-image {
+		height: 360px;
+		padding-bottom: 34px;
+		&__title {
+			padding-left: 14px;
+		}
+	}
+	.homes-list {
+		&__top-sect {
+			margin-top: 54px;
+			p {
+				font-size: 1.125rem;
+				line-height: 1.875rem;
+			}
+		}
+		&__item {
+			width: 100%;
+		}	
+		&__bottom-sect {
+			&:after {
+				display: none;
+			}			
+		}
+		&__wrapper {
+			padding-bottom: 0;
+		}	
+
+	}
+
+	.page-bottom-desc {
+		&__text {
+		    padding: 47px 24px 66px 24px;				
+		}
+	}	
+
+	.home-block {
+		.right_column {
+			text-align: right;
+		}
+	}
+
+	.big-title {
+	    margin-bottom: 46px;			
+	}	
+	.footer__center-column {
+		width: 100%;
+	}	
+	.discont-section__title p {
+	    font-size: 18px;
+	    line-height: 30px;
+	}
+	.discont-section__title {
+	    margin-bottom: 39px;
+	}
+	.discont-section__price-row p, .small-price-text {
+	    font-size: 20px;
+	    line-height: 32px;
+	}
+	.discont-section__price-row .under-price-desc {
+		font-size: 16px;
+	}	
+	.discont-section__price-row {
+		flex-direction: column;
+		padding-bottom: 30px;
+		.separator {
+			display: none;
+		} 
+		.under-price-desc {
+			position: static;
+			width: 100%;
+		}
+		p {
+			display: flex;
+			flex-wrap: wrap;			
+		}
+	}
+	.discont-section__wrapper {
+		padding-bottom: 264px;
+	}
+	.prices-section__table-desc {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 25px;
+	}
+	.prices-section__table-wrap {
+		padding-top: 50px;
+	}
+	.prices-section__table-filter {
+	    margin-right: 0;
+	    flex-direction: column;
+	    padding-top: 60px;
+		padding-bottom: 33px;
+		margin-bottom: 10px;
+		&:after {
+			left: -50px;
+			right: -50px;
+		}	    
+	}
+	.prices-section .row {
+		position: relative;
+		margin-bottom: 52px;
+		margin-left: -7px;
+		input {
+			min-width: 100px;
+		}
+		.control {
+			position: static;
+		}
+	}	
+	.prices-section .row label {
+	    width: 78px;
+	    position: absolute;
+	    top: -30px;	
+	    left: 7px;
+	}
+	.right-column {
+	    margin-top: -21px;
+	    .row {
+	    	margin-left: 0;
+    	    margin-bottom: 13px;
+
+	    }
+	}
+	.prices-section .row .control_indicator {
+		margin-right: 17px;
+	}
+	.prices-section__table {
+		margin: 0 -15px;
+	}
+	table {
+		font-size: 13px;
+		min-width: 100%;
+		#note, th:last-of-type, tr td:nth-child(5), tr td:nth-child(6) {
+			display: none;
+		}
+		#area {
+			width: 69px;
+		}
+		#item-price {
+			width: 52px;
+		}
+		#all-price {
+			width: 44px;
+		}
+		#number {
+			width: 34px;
+		}
+
+	}
+	.genplan-description-section__text {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	    margin-bottom: 0;
+	    padding-bottom: 33px;		
+		&:after {
+			left: -50px;
+			right: -50px;
+		}
+		.big-title {
+		    margin-bottom: 38px;
+		}		
+	}	
+}
