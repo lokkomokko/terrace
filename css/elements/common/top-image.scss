@@ -8,23 +8,30 @@
     flex-direction: column;
     justify-content: flex-end;    
     z-index: 1;    
+	&:after {
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+		opacity: 0.6;		
+		content: '';
+		@extend %abs-pos;
+	}    
 	&__image {
 		@extend %abs-pos;
 		@extend %img;
 		z-index: -1;
+
 	}
 	&__title {
 		z-index: 2;
 		box-sizing: border-box;
 		padding-left: 152px;
-		max-width: 967px;
+		max-width: 1030px;
 		position: relative;
 		&:after {
 			content: '';
 			height: 1px;
 			background-color: #fff;
 			position: absolute;
-			top: 37px;
+			top: 38px;
 			left: 0;
 			width: 118px;
 		}

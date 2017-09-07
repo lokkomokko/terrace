@@ -27,7 +27,29 @@ $(document).ready(function(){
 
     $('tr[data-href]').on("click", function() {
         document.location = $(this).data('href');
-    });            
+    });    
+
+    // genplan mobile iframe
+
+    if ($('.genplan').length >= 1) {
+        $('.genplan__mobile-link').fancybox({
+            // iframe: {
+            //    css : {
+            //         width  : '320px',
+            //     },
+            // 'scrolling': 'yes'                     
+            // },
+            
+            'type': 'iframe',
+            iframe :{
+               css : {
+                    width  : '320px',
+                },
+            'scrolling': 'yes'  
+            }
+
+        });        
+    }            
 
 
 });    

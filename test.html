@@ -8,13 +8,14 @@
 
 	<meta charset="utf-8">
 
-	<title>test</title>
+	<title>About</title>
 	<meta name="POPFARM" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/main.css">
-
+	
 	<!-- style for genplan -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
 	 <link rel="stylesheet" href="js/genplan_module/style.css">
 
 </head>
@@ -94,457 +95,203 @@
 		</div>
 	</header>	
 
-	<div class="genplan">
+	<div class="top-image">
+		<img class="top-image__image" src="img/ab2.png" alt="">
+		<h1 class="top-image__title h1-title">
+			Описание, расположение
+			и инфраструктура посёлка
+		</h1> 
+	</div>
 
-		<div class="genplan__bg"></div>
+	<div class="about-top-section">
 
-		<div class="genplan__wrapper container">
-			
-			<div class="genplan__conventions">
+		<div class="about-top-section__wrapper container">
 
-		<h1 class="genplan__title">Генплан</h1>	
 
-				<p class="genplan__conventions-title">
-					Условные обозначения
-				</p>
-				<div class="genplan__conventions-rules">
-					<p class="rule_1">— Продан</p>
-					<p class="rule_2">— В продаже</p>
-					<p class="rule_3">— В продаже участок + дом</p>
-				</div>
-				<div class="genplan__conventions-icons-wrapper">
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#electro"><use/>	
-						</svg>					
-						<p>
-							Электрический 
-							трансформатор		
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#water"><use/>	
-						</svg>					
-						<p>
-							Водозаборный узел		
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#post"><use/>	
-						</svg>					
-						<p>
-							Пост охраны		
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#admin"><use/>	
-						</svg>					
-						<p>
-							Административное
-здание	
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#service"><use/>	
-						</svg>					
-						<p>
-							Служба сервиса и эксплуатации		
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#gas"><use/>	
-						</svg>					
-						<p>
-							Газорегуляторный 
-пункт		
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#market"><use/>	
-						</svg>					
-						<p>
-							Минимаркет		
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#prichal"><use/>	
-						</svg>					
-						<p>
-							Причал	
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#parking"><use/>	
-						</svg>					
-						<p>
-							Автомобильная парковка		
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#walking"><use/>	
-						</svg>					
-						<p>
-							Прогулочная парковая зона	
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#lake"><use/>	
-						</svg>					
-						<p>
-							Внутреннее озеро		
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#kids-park"><use/>	
-						</svg>					
-						<p>
-							Детская площадка	
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#kids"><use/>	
-						</svg>					
-						<p>
-							Детский  развлекательный центр	
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#bike"><use/>	
-						</svg>					
-						<p>
-							Велосипедная дорожка
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#sport"><use/>	
-						</svg>					
-						<p>
-							Спортивная площадка		
-						</p>
-					</div>
-					<div class="genplan__conventions-icons-item">
-						<svg class="icon-g icon-genplan">
-							<use xlink:href="img/symbol/sprite-genplan.svg#beach"><use/>	
-						</svg>					
-						<p>
-							Пляж
-						</p>
-					</div>														
-				</div>
-				<a href="" class="genplan__conventions-desc-link read-more">Описание инфраструктуры »</a>
+			<div class="top-page-sect">
+				<p class="italic-text">Расстояния от поселка «Морские террасы» до населенных пунктов</p>
 			</div>
 
-			<!-- bundle of old site genplan module, copy\paste hallelujah -->
+			<div class="image-section">
+				<div class="image-section__wrapper container">
+					<div class="image-section__item">
+						<div class="image-section__item__text">
+							<div class="image-section__item__name">25<span>Км</span></div>
+							<div class="image-section__item__desc">Зеленогорск</div>
+						</div>
+					</div>
 
-					<div id="pg" style="margin: 0 3px;
-			overflow: hidden;
-			width: 800px;
-			height: 1372px;
-			position: relative;">
+					<div class="image-section__item">
+						<div class="image-section__item__text">
+							<div class="image-section__item__name">67<span>Км</span></div>
+							<div class="image-section__item__desc">Санкт-Петербург</div>
+						</div>			
+					</div>
 
-			<div id="rsr" style="/*background: url(js/genplan_module/img/genplan_bg.png);*/
-			background-position: -1px -1px;
-			position: relative;
-			left: -17px;
-			top: -110px;
-			width: 830px;"></div>
+					<div class="image-section__item">
+						<div class="image-section__item__text">
+							<div class="image-section__item__name">81<span>Км</span></div>
+							<div class="image-section__item__desc">Выборг</div>
+						</div>			
+					</div>
 
+					<div class="image-section__item">
+						<div class="image-section__item__text">
+							<div class="image-section__item__name">141 <span>Км</span></div>
+							<div class="image-section__item__desc">Финляндия</div>
+						</div>			
+					</div>
+											
+				</div>
 			</div>
-			<script src="js/genplan_module/genplan-json.js"></script>
-			<script src="js/genplan_module/raphael-min.js"></script>
-			<script src="js/genplan_module/genplan.js"></script>
 
 		</div>
 	</div>
-	<!-- end of genplan -->
 
-	<section class="discont-section">
-		<div class="discont-section__wrapper container">
-			<div class="discont-section__title">
-				<p class="italic-text">
-					Внимание! Специальное предложение на береговые участки до 25 сентября
-				</p>
+	<section class="page-bottom-desc about-first-text-block">
+		<div class="page-bottom-desc__text">
+			<h2 class="big-title">О Посёлке</h2>
+			<p class="text-content">
+				Коттеджный поселок «Морские террасы» находится на 25-ом километре Приморского шоссе в поселке Пески, Выборгского района Ленинградской области. Расстояние от Санкт-Петербурга до поселка 67 км. Коттеджный поселок «Морские террасы» предназначен для круглогодичного комфортного проживания и отдыха, именно поэтому в поселке предусмотрен полный спектр инженерной инфраструктуры и асфальтированные дороги. Городской уровень комфорта и безопасности проживания обеспечат эксплуатационная и охранная службы. В проекте планировки застройки коттеджного поселка собственный оборудованный пляж, прогулочная парковая зона с внутренним озером, спортивные и детские площадки, детский развлекательный центр, кафе и минимаркет.			
+			</p>
+		</div>
+		<div class="page-bottom-desc__image">
+			<img src="img/gn1.png" alt="">
+		</div>
+	</section>
+	<section class="page-bottom-desc about-second-text-block">
+		<div class="page-bottom-desc__text">
+			<h2 class="big-title">Расположение</h2>
+			<p class="text-content">
+				Поселок расположен на берегу Финского залива. Главный въезд на территорию коттеджного комплекса организован с Приморского шоссе. До коттеджного поселка можно добраться на общественном транспорте: автобусы № 420А, 420 (Зеленогорск - Красная долина), остановка "25 км".
+				<br><br>
+				Благодаря благоприятной экологической обстановке, отсутствию промышленных предприятий, развитой социальной инфраструктуре, качественным автомобильным дорогам и налаженной сети общественного транспорта эти земли являются особенно привлекательными для жизни. Стабильно высокая стоимость земли в этом районе во все времена подтверждает особый статус места. А уникальный микроклимат, хвойные леса, Финский залив и множество озер с песчаными берегами делает Карельский перешеек любимейшим местом отдыха петербуржцев на протяжении трех последних столетий. Исторически сложилось так, что на этих землях никогда не было крупных населенных пунктов и промышленных предприятий. Во времена, когда территория принадлежала Финляндии, поселок Пески входил в состав волости Уусикиркко Выборгской губернии и носил название Вохнала. Эта небольшая деревня издавна славилась своими морскими традициями. В Советское время земли в данной местности были предназначены для санаторно-курортного и летнего детского оздоровительного отдыха.			
+			</p>
+		</div>
+		<div class="page-bottom-desc__image">
+			<div class="png-sprite-about-mayak"></div>
+		</div>
+	</section>	
+	
+	<section class="about-map">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0b68e9e02d49cfc5f480b9b346aa45da45ad117a9451ac8f9f36bd55cf45427&amp;width=&amp;height=659&amp;lang=ru_RU&amp;scroll=true"></script>		
+	</section>
+
+	<section class="page-bottom-desc about-third-text-block">
+		<div class="page-bottom-desc__text">
+			<h2 class="big-title">
+				Социальная
+				инфраструктура
+			</h2>
+			<p class="text-content">
+				На территории коттеджного поселка «Морские террасы» предусмотрено большое количество объектов социальной инфраструктуры для отдыха как взрослых так и детей, а также занятий спортом. Генеральным планом предусмотрена возможность последующего развития  общественной территории и насыщение поселка новыми объектами социальной инфраструктуры  по желанию жителей. К продаже предлагаются земельные участки разной площади и ценовой категории в зависимости от расположения и близости к береговой линии Финского залива.			
+			</p>
+			<div class="about-icons">
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#beach"><use/>	
+					</svg>				
+					Пляж
+				</div>					
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#parking"><use/>	
+					</svg>						
+					Парковая  прогулочная  зона
+				</div>
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#walking"><use/>	
+					</svg>						
+					Спортивная площадка
+				</div>	
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#kids"><use/>	
+					</svg>					
+					Детская площадка
+				</div>	
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#lake"><use/>	
+					</svg>					
+					Внутреннее
+					озеро
+				</div>	
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#parking"><use/>	
+					</svg>						
+					Гостевая парковка
+				</div>				
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#electro"><use/>	
+					</svg>						
+					Интернет
+				</div>												
 			</div>
-			<div class="discont-section__price-row">
-				<p>
-					41,73
-					<span class="small-price-text"> cот.</span>
-					<span class="under-price-desc">
-						Участки № 0, 1, 2, 3
-					</span>
-				</p>
-				<p class="separator">—</p>
-				<p>					
-					32 961 000  Руб.
-					<span class="under-price-desc">
-						Старая цена <span class="crossed-out">42 961 000</span>
-					</span>
-				</p>
-			</div>			
+		</div>
+		<div class="page-bottom-desc__image">
+			<div class="png-sprite-about-socialinfrastucture"></div>
+		</div>
+	</section>
 
-			<div class="discont-section__price-row">
-				<p>
-					54,78
-					<span class="small-price-text"> cот.</span>
-					<span class="under-price-desc">
-						Участок № 10
-					</span>
-				</p>
-				<p class="separator">—</p>
-				<p>					
-					43 769 220  Руб.
-					<span class="under-price-desc">
-						Старая цена <span class="crossed-out">53 769 220</span>
-					</span>
-				</p>
-			</div>					
+	<section class="page-bottom-desc about-last-text-block">
+		<div class="page-bottom-desc__text">
+			<h2 class="big-title">
+				Инженерная
+				инфраструктура
+			</h2>
+			<p class="text-content">
+				Коттеджный поселок «Морские террасы» предназначен для круглогодичного проживания и отдыха, поэтому проектом предусмотрен полный спектр инженерной инфраструктуры. Все коммуникации подводятся к индивидуальным участкам и включены в стоимость земли. Городской уровень комфорта проживания и безопасность жителей обеспечат эксплуатационная и охранная службы. Коттеджный поселок «Морские террасы» предоставляет возможность приобрести земельные участки для ИЖС с коммуникациями и построить загородный дом на Финском заливе.		
+			</p>
+			<div class="about-icons">
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#gas"><use/>	
+					</svg>				
+					Магистральный газ
+				</div>					
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#electro"><use/>	
+					</svg>						
+					Электрический трансформатор
+				</div>
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#water"><use/>	
+					</svg>						
+					Водозаборный узел
+				</div>	
+				<div class="about-icons__item">
+				<div class="png-sprite-about-road"></div>				
+					Асфальтированные дороги
+				</div>	
+				<div class="about-icons__item">
+					<div class="png-sprite-about-light"></div> 				
+					Уличное освещение
+				</div>	
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#service"><use/>	
+					</svg>						
+					Служба сервиса и эксплуатации
+				</div>				
+				<div class="about-icons__item">
+					<svg class="icon-g icon-genplan">
+						<use xlink:href="img/symbol/sprite-genplan.svg#post"><use/>	
+					</svg>						
+					Охрана территории
+				</div>												
+			</div>			
+		</div>
+		<div class="page-bottom-desc__image">
+			<img src="img/ab1.png" alt="">
 		</div>
 	</section>	
 
-	<section class="prices-section">
-
-		<div class="prices-section__back-image">
-			<img src="https://obustroeno.com/wp-content/uploads/chasche-terrasy-obshivayut-nedorogoy-drevesinoy.jpg" alt="">			
-		</div>
-
-		<div class="prices-section__wrapper container">
-
-			<div class="prices-section__table-wrap">
-
-				<h2 class="big-title">Цены</h2>		
-
-				<p class="prices-section__table-desc">В таблице ниже показаны <b>только свободные</b> участки</p>
-
-				<form class="prices-section__table-filter">
-
-					<div class="left-column">
-
-						<div class="row">
-							<label>Площадь:</label>
-							<input type="number" placeholder="17">
-							—
-							<input type="number" placeholder="52,34">
-							сот.
-						</div>
-
-						<div class="row">
-							<label>Стоимость:</label>
-							<input type="number" placeholder="21 000 000">
-							—
-							<input type="number" placeholder="94 000 000">
-							руб.
-						</div>						
-					</div>
-
-					<div class="right-column">
-
-						<div class="row">
-						    <label class="control control-checkbox">
-						            <input type="checkbox"/>
-						        <div class="control_indicator"></div>
-						    </label>
-		    			 	Показать участки с домом
-						</div>
-
-						<div class="row">
-							<b>Найдено участков: 16</b>
-						</div>
-					</div>
-				</form>
-
-				<div class="prices-section__table">
-					<table>
-					    <tr>
-					        <th id="number">№</th>
-					        <th id="area">Площадь (сот.)</th>
-					        <th id="item-price">Цена за сотку</th>
-					        <th id="all-price">Цена участка</th>
-					        <th id="note">Примечание</th>
-					        <th></th>
-					    </tr>
-					    <tr data-href="#">
-					        <td>58</td>
-					        <td>17.01</td>
-					        <td>310000</td>
-					        <td>5 234 434</td>
-					        <td>10% скидка </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>
-					    <tr data-href="#">
-					        <td>214</td>
-					        <td>7.01</td>
-					        <td>430000</td>
-					        <td>10 234 434</td>
-					        <td>Участок + Дом </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>
-					    <tr data-href="#">
-					        <td>54</td>
-					        <td>200.01</td>
-					        <td>30000</td>
-					        <td>3 234 434</td>
-					        <td>10% скидка </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>		
-					    <tr data-href="#">
-					        <td>2</td>
-					        <td>44.01</td>
-					        <td>10000</td>
-					        <td>10 234 434</td>
-					        <td>10% скидка </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>
-					    <tr data-href="#">
-					        <td>58</td>
-					        <td>17.01</td>
-					        <td>310000</td>
-					        <td>5 234 434</td>
-					        <td>10% скидка </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>
-					    <tr data-href="#">
-					        <td>214</td>
-					        <td>7.01</td>
-					        <td>430000</td>
-					        <td>10 234 434</td>
-					        <td>Участок + Дом </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>
-					    <tr data-href="#">
-					        <td>54</td>
-					        <td>200.01</td>
-					        <td>30000</td>
-					        <td>3 234 434</td>
-					        <td>Участок + Дом</td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>		
-					    <tr data-href="#">
-					        <td>2</td>
-					        <td>44.01</td>
-					        <td>10000</td>
-					        <td>10 234 434</td>
-					        <td> </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>
-					    <tr data-href="#">
-					        <td>58</td>
-					        <td>17.01</td>
-					        <td>310000</td>
-					        <td>5 234 434</td>
-					        <td> </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>
-					    <tr data-href="#">
-					        <td>214</td>
-					        <td>7.01</td>
-					        <td>430000</td>
-					        <td>10 234 434</td>
-					        <td>Участок + Дом </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>
-					    <tr data-href="#">
-					        <td>54</td>
-					        <td>200.01</td>
-					        <td>30000</td>
-					        <td>3 234 434</td>
-					        <td>10% скидка </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>		
-					    <tr data-href="#">
-					        <td>2</td>
-					        <td>44.01</td>
-					        <td>10000</td>
-					        <td>10 234 434</td>
-					        <td>10% скидка </td>
-					        <td>
-					        	<div class="read-more">
-					        		Забронировать
-					        	</div>
-					        </td>
-					    </tr>					    					    
-
-					</table>						
-				</div>
-
-			</div>		
-		</div>
-	</section>		
-	<section class="genplan-description-section">
-		<div class="genplan-description-section__back-image">
-			<img src="img/gn1.png" alt="">
-		</div>
-		<div class="genplan-description-section__wrapper container">
-			
-			<div class="genplan-description-section__text">
-				<h3 class="big-title">Об Участках</h3>
-				<p class="text-content">
-					«Морские террасы» - это коттеджный поселок на Карельском перешейке в сосновом  лесу на  берегу Финского залива. Протяженность собственной береговой линии поселка – 650 метров. Общая площадь поселка – 65 гектаров. Поселок включает  в себя 257 индивидуальных земельных участков площадью от 15 до 70 соток и  большую общественную территорию, наполненную социальной инфраструктурой. 
-					<br><br>
-					Земельные участки в коттеджном поселке очень разнообразны не только по площади и местоположению относительно залива, но и по своим физическим характеристикам: панорамные и видовые участки у воды на первой линии Финского залива, земельные участки в сосновом лесу, ровные участки и рельефные земельные участки. В центре поселка есть земельные участки у озера.
-					<br><br>			
-					Все земельные участки в собственности. Срок сдачи первой очереди инженерных сетей в поселке запланирован на IV квартал 2014 года.  Срок реализации проекта в целом со всеми объектами инфраструктуры - 2015 год. 				
-				</p>				
-			</div>
-		</div>
-	</section>
 	<!-- footer -->
 	<footer class="footer">
 		<div class="footer__wrapper container">
@@ -565,6 +312,7 @@
 	</footer>	
 </div>	
 
+
 <!-- slide-buttons -->
 <!-- <div class="slide_button prev">
 	<svg class="icon icon-arrow">
@@ -579,6 +327,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>

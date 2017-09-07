@@ -46,4 +46,44 @@
   width: 28px;
   height: 28px; }
 
-/*# sourceMappingURL=png_sprite.css.map */
+
+
+.png-sprite-about {
+
+    &-light, &-mayak, &-road, &-socialinfrastucture {
+    background-image: url('../../img/png_sprite/png_sprite_about.png');
+    background-repeat: no-repeat;
+    display: block;
+    }
+}
+
+.png-sprite-about-light {
+    width: 34px;
+    height: 56px;
+    background-position: 0 13px;
+    background-size: 667px;
+    width: 22px;
+    height: 64px;
+}
+
+.png-sprite-about-mayak {
+    width: 454px;
+    height: 685px;
+    background-position: -34px 0;
+}
+
+.png-sprite-about-road {
+    width: 34px;
+    height: 56px;
+    background-position: -333px 13px;
+    background-size: 667px;
+    width: 22px;
+    height: 64px;
+
+}
+
+.png-sprite-about-socialinfrastucture {
+    width: 458px;
+    height: 585px;
+    background-position: -522px 0;
+}

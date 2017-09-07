@@ -68,6 +68,9 @@ body {
 // import common elements stylesheet
 @import "elements/common/elements";
 
+// import magnific popup stylesheet
+@import "elements/common/magnific-popup";
+
 // import header
 @import "elements/common/header";
 
@@ -101,6 +104,9 @@ body {
 @import "elements/genplan/discont-section";
 @import "elements/genplan/prices-section";
 @import "elements/genplan/genplan-description-section";
+
+// import about page stylesheet
+@import "elements/about/about";
 
 // import media queries
 @import "media/media";

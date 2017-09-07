@@ -102,7 +102,58 @@
 	.prices-section__table-filter {
 		margin-right: -43px;
 	}	
+	.about-first-text-block {
+	    min-height: 586px;
+		.page-bottom-desc__text {
+		    padding: 49px;
+		}	
+	}
+	.about-second-text-block {
+		.page-bottom-desc__text {
+		    padding: 49px;
+		    width: 72%;
+		}			
+		.page-bottom-desc__image {
+			top: -112px;
+		}		
+	}
+	.big-title:before {
+		display: none;
+	}
+	.about-map {
+	    margin-top: -103px;
+	}	
+	.about-third-text-block {
+	    min-height: 808px;
 
+	}
+	.about-third-text-block .page-bottom-desc__text {
+	    width: 80%;
+	    padding: 49px;
+	    padding-bottom: 0;
+	    .about-icons {
+	    	flex-wrap: wrap;
+	    	justify-content: center;
+	    }
+	    .text-content {
+	    	margin-bottom: 46px;
+	    }
+	        
+	    .about-icons__item {
+	    	flex-basis: 25%;
+	    	// max-width: 150px;
+    	    margin-bottom: 59px;
+	    }
+	}	
+	.about-last-text-block {
+		min-height: 793px;
+		.page-bottom-desc__text {
+		    width: 81%;
+		}		
+		.page-bottom-desc__image {
+			top: 54px;
+		}
+	}
 }
 @media (max-width: 768px) and (min-width: 360px) {
 	.image-section {
@@ -258,11 +309,11 @@
 		} 
 
 	}
-	.homes-list {
-		&__top-sect {
-		    margin-bottom: 50px;
-	        padding-bottom: 45px;			
-		}			
+	.top-page-sect {
+	    margin-bottom: 50px;
+        padding-bottom: 45px;
+	}
+	.homes-list {		
 		&__wrapper {
 		    padding-bottom: 20px;
 		}
@@ -335,6 +386,45 @@
 	}
 	.genplan-description-section__text {
 		margin-top: 0;
+	}
+
+	.top-page-sect {
+		display: flex;
+		justify-content: center;
+		p {
+			line-height: 35px;
+			max-width: 500px;
+		}
+	}
+	.page-bottom-desc {
+		min-height: auto;
+		width: 100%;
+		padding: 0 !important;
+		margin: 0 !important;
+		.big-title {
+		    margin-top: 55px;
+		}
+		&__text {
+			width: 100% !important;
+			padding: 0 24px !important;
+			box-sizing: border-box;
+			margin: 0 !important;			
+			p {
+				width: 100% !important;
+				max-width: 100% !important;	
+				margin-bottom: 55px;
+			}
+		} 
+		&__image {
+			display: none !important;
+		}
+	}
+	.about-last-text-block .about-icons {
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	.about-map {
+	    height: 479px;
 	}
 
 }
@@ -494,14 +584,15 @@
 			padding-left: 14px;
 		}
 	}
-	.homes-list {
-		&__top-sect {
-			margin-top: 54px;
-			p {
-				font-size: 1.125rem;
-				line-height: 1.875rem;
-			}
+	.top-page-sect {
+		margin-top: 54px;
+		p {
+			font-size: 1.125rem;
+			line-height: 1.875rem;
 		}
+	}
+	.homes-list {
+
 		&__item {
 			width: 100%;
 		}	
@@ -650,4 +741,70 @@
 		    margin-bottom: 38px;
 		}		
 	}	
+	.genplan {
+		margin-top: 77px;
+		background-image: none;
+	}
+	.genplan__mobile-link {
+		display: flex;
+	}
+	#pg, .genplan__bg, .genplan__conventions  {
+		display: none;
+	}
+
+	.about-top-section .top-page-sect {
+	    margin-bottom: 35px;
+	    padding: 0px 0 35px;
+	    margin: 35px 0;
+	}
+	.image-section__item__name {
+		font-size: 55px;
+		span {
+			font-size: 25px;
+		}
+	}	
+	.image-section__item__desc {
+		font-size: 16px;
+	}
+	.image-section__item__text {
+		position: static;
+	}
+	.image-section__wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+	.image-section__item {
+		flex-basis: 50%;
+		&:nth-child(3) {
+			margin-bottom: 48px;
+		}
+		&:nth-child(4) {
+			margin-bottom: 48px;
+		}		
+	}
+	.about-top-section {
+		padding: 0;
+	}
+	.page-bottom-desc {
+	    .big-title {
+	    	margin: 42px 0;
+	    	font-size: 28px;
+	    	line-height: 35px;
+	    }
+	    p {
+	    	margin-bottom: 39px;
+	    }
+	    &__text {
+	    	padding: 0 15px !important;
+	 
+	    }
+	    .about-icons__item {
+	    	flex-basis: calc(50% - 40px) !important;
+	    	margin-left: 10px;
+	    	margin-right: 10px;
+	    }
+	}
+
+
 }
