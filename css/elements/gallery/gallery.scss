@@ -93,3 +93,21 @@
 
 	}
 }
+
+.gallery-inner {
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	    margin: -30px -15px;
+	    padding: 94px 0;
+	}
+	&__image {
+		display: flex;
+		flex-basis: calc(25% - 30px);
+		margin: 15px;
+		height: 177px;
+		img {
+			@extend %img;
+		}
+	}
+}

@@ -564,9 +564,12 @@
 				margin-right: -26px;			
 				
 
-			}
+		}
 	}	
 	
+	.gallery-inner__image {
+		flex-basis: calc(50% - 30px);
+	}
 
 }
 
@@ -1093,7 +1096,13 @@
 		.gallery-block__little-images-wrap {
 				
 				flex-direction: column;
-			}
+		}
+	}	
+	.gallery-inner__image {
+		flex-basis: calc(100% - 30px);
 	}		
+	.gallery-inner__wrapper {
+	    padding: 65px 0;
+	}
 
 }

@@ -74,13 +74,10 @@ $(document).ready(function(){
 
     // popup for galleries pages
 
-    if($('.gallery-block').length >= 1) {
+    if($('.gallery-block').length >= 1 || $('.gallery-inner').length >= 1) {
 
-        $('.gallery-block__images a').fancybox({
-
-
-
-        }); 
+        $('.gallery-block__images a').fancybox(); 
+        $('.gallery-inner__image').fancybox();
     }
 
 
