@@ -57,7 +57,9 @@
 		line-height: 18px;
 	}
 	.top-image {
-
+		&__breadcrumbs {
+			padding-left: 42px;
+		}
 		&__title {
 			padding-left: 42px;
 			&:after {
@@ -160,6 +162,18 @@
 		.col {
 			font-size: 16px;
 		}
+	}
+	.inner-new {
+		&__text {
+			max-width: 616px;
+		}
+	}
+	.carousel__item {
+		height: 132px;
+		width: 132px;
+	}
+	.carousel .slick-prev, .carousel .slick-next {
+		bottom: 52px;
 	}
 
 }
@@ -310,6 +324,9 @@
 
 	.top-image {
 		padding-bottom: 47px;
+		&__breadcrumbs {
+			padding-left: 24px;
+		}
 		&__title {
 			font-size: 3.25rem;
 			padding-left: 24px;
@@ -434,8 +451,93 @@
 	.about-map {
 	    height: 479px;
 	}
+	.inner-new {
+		&__text {
+			max-width: 100%;
+			padding-bottom: 138px;
+		}
+		&__btn {
+			top: auto;
+			bottom: 50px;
+			width: auto;
+		    flex-direction: row;
+		    width: 200px;
+		    justify-content: space-between;
+		    align-items: center;			
+			span {
+				width: 52px;
+				margin-bottom: 0;
+				height: 52px;
+			}
+			&.next {
+			    span {
+			    	order: 1;
+			    }
+			}
+		}
+	}
+	.carousel__item {
+		height: 158px;
+	}	
+	.carousel .slick-prev, .carousel .slick-next {
+	    bottom: 41px;
+	}
+	.info-section {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+		.callback--home {
+			position: static;
+			order: 3;
+			position: relative;
+			height: 195px;
+			width: 100%;
+			flex-direction: row;
+			padding-top: 87px;
+			margin-top: 72px;
+			box-sizing: content-box;			
+		    width: 94%;
+		    input:first-of-type, #phone {
+				width: 47%;
+
+		    }
+			&__top {
+				position: absolute;
+				top: 22px;
+			    align-items: left;
+				left: 22px;
+			}
+			form {
+				flex-direction: column;
+				width: 100%;
+				flex-wrap: wrap;
+			}
+			.agree {
+				width: 47%;
+				order: 0;
+
+			}
+			button {
+			    align-self: flex-end;
+			    width: 50%;
+			    order: 1;
+			}			
+			&__comment-input {
+			    margin-bottom: 17px;
+			    width: 50%;
+			    align-self: flex-end;
+			    order: 1;
+			}			
+		}
+		&__back-link {
+			order: 4;
+		}
+	}		
 
 }
+
+
 @media (max-width: 320px) {
 	.main-wrapper {
 		width: 320px;
@@ -588,6 +690,9 @@
 	.top-image {
 		height: 360px;
 		padding-bottom: 34px;
+		__breadcrumbs {
+			padding-left: 14px;
+		}
 		&__title {
 			padding-left: 14px;
 		}
@@ -834,6 +939,10 @@
 		.row {
 			padding: 0;
 			flex-direction: column;
+			z-index: 1;
+			&>.col {
+				width: 100%;
+			}
 			.col {
 				font-size: 22px;
 				padding: 60px 0 30px;		
@@ -848,6 +957,7 @@
 				border-left: 10px solid transparent;
 				border-right: 10px solid transparent;
 				border-top: 15px solid $brownColor;				
+				z-index: -1;
 			}	
 		}
 		.wrap {
@@ -855,10 +965,61 @@
 			overflow: hidden;
 			will-change: transform;
 			transition: .4s max-height;
+		    justify-content: flex-start;
+		    flex-direction: column;			
 			&.open {
 				max-height: 400px;
 			}
 		}
+	}
+	.inner-new {
+		&__text {
+			padding-bottom: 211px;
+		}
+		&__image {
+			height: 176px;
+			margin-top: 25px;
+		}
+		&__btn {
+			bottom: 70px;
+			width: 77px;
+		    flex-direction: column;
+		    justify-content: flex-start;
+		    align-items: center;			
+		    span {
+		    	margin-bottom: 20px;
+		    }
+			&.next {
+			    span {
+			    	order: 0;
+			    }
+			}
+		}
+	}	
+	.top-image__breadcrumbs {
+	    padding-left: 15px;
+	}	
+	.carousel__item {
+		height: 130px;
+	}	
+	.carousel .slick-prev, .carousel .slick-next {
+	    bottom: 41px;
+	}
+	.middle-title {
+		line-height: 40px;
+		margin-bottom: 20px;
+	}	
+	.info-section {
+		padding-top: 39px;
+	}
+	.info-section__desc, .info-section__equipmentm, .info-section__common-info {
+	    margin-bottom: 31px;
+	}	
+	.callback--home {
+		display: none;
+	}
+	.info-section__back-link {
+		margin: 60px 0;
 	}
 
 }

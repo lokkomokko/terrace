@@ -15,6 +15,23 @@
           $('.carousel__wrapper').slick({
 			slidesToShow: 6,
 			slidesToScroll: 1,
-			draggable: false 
+			draggable: false, 
+            responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                  }
+                },                        
+                {
+                  breakpoint: 320,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                },                 
+            ]
+
             });
  };
