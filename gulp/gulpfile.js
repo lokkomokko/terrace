@@ -33,10 +33,10 @@ gulp.task('svg', function () {
 		.pipe(svgSprite({
 			mode: {
 				symbol: {
-					sprite: "./sprite-genplan.svg",
+					sprite: "./sprite-convert.svg",
 					render: {
 						scss: {
-							dest:'../../css/sprite/svg_sprite-genplan.scss',
+							dest:'../../css/sprite/svg_sprite-convert.scss',
 							template: "template/_sprite_template.scss"
 						}
 					}
