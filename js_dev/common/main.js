@@ -32,6 +32,7 @@ $(document).ready(function(){
     // genplan mobile iframe
 
     if ($('.genplan').length >= 1) {
+
         $('.genplan__mobile-link').fancybox({
 
             'type': 'iframe',
@@ -68,6 +69,18 @@ $(document).ready(function(){
         filter_row_2.first().click(function() {
             filter_row_2.parent().find('.wrap').toggleClass('open')
         });         
+    }
+
+
+    // popup for galleries pages
+
+    if($('.gallery-block').length >= 1) {
+
+        $('.gallery-block__images a').fancybox({
+
+
+
+        }); 
     }
 
 
