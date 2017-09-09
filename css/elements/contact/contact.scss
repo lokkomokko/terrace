@@ -1,0 +1,50 @@
+.contact-page {
+	width: 100%;
+	background-color: $backgroundColor;
+	.image-section__item__text {
+		position: static;
+		margin-top: 34px;
+		line-height: 32px;
+	}
+	.top-page-sect {
+		margin-bottom: 0;
+	}
+	.image-section__wrapper {
+		padding: 82px 0 235px ;
+	}
+	.image-section {
+		max-height: 100%;
+	}
+	&__bottom-img {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		img {
+			@extend %img;
+		}
+	}
+}
+
+.form-section {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	box-sizing: border-box;
+	padding-bottom: 68px;
+	button {
+	    width: 100%;
+	}
+	&__bottom-img {
+		z-index: -1;
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 56%;
+		img {
+			@extend %img;
+		}
+	}
+	
+}

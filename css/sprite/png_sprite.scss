@@ -1,7 +1,7 @@
 .png-sprite__67, .png-sprite__4, .png-sprite__258, .png-sprite__11, .png-sprite__olen,
 .png-sprite__shihka-big, .png-sprite__bitmap, .png-sprite__shishka {
   display: inline-block;
-  background: url("../../img/png_sprite/png_sprite.png") no-repeat;
+  background: url("http://hivr.ru/terrace/img/png_sprite/png_sprite.png") no-repeat;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left; }
@@ -51,7 +51,7 @@
 .png-sprite-about {
 
     &-light, &-mayak, &-road, &-socialinfrastucture {
-    background-image: url('../../img/png_sprite/png_sprite_about.png');
+    background-image: url('http://hivr.ru/terrace/img/png_sprite/png_sprite_about.png');
     background-repeat: no-repeat;
     display: block;
     }

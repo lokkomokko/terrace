@@ -127,6 +127,62 @@
 				}
 			}
 	}	
+	&--contact {
+		height: 100%;
+		width: 66%;
+		flex-direction: column;
+		box-sizing: border-box;
+		padding: 68px 90px 90px 149px;
+		margin-top: -124px;
+		border: none;
+		input {
+			width: 100%;
+			font-size: 13px;
+		}
+		form {
+			flex-direction: row;
+		}
+		.big-title {
+			margin-bottom: 28px;
+			&:before {
+				left: -40vw;
+				width: 37vw;
+			}
+		}
+		textarea {
+			height: 117px;
+		}
+		button {
+			height: 50px;
+		}
+
+		&__form-wrap-input {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 10px;
+			div {
+				display: flex;
+				flex-basis: 48%;
+				flex-direction: column;
+			}
+		}
+		&__form-left-col {
+			flex: 1;
+		    display: flex;
+		    flex-direction: column;			
+		    margin-right: 15px;
+		}
+		&__form-right-col {
+			margin-left: 15px;
+			flex: 1;
+		}
+		&__desc {
+			font-family: $accentFont;
+			font-style: italic;
+			font-size: 16px;
+			margin-bottom: 63px;
+		}	
+	}
 
 }
 
