@@ -18,10 +18,16 @@ $(document).ready(function(){
 
     // hamburger-menu
 
+
         $('.hamburger-menu').click(function() {
+            $('body').hasClass('no-scroll') ? $('.no-scroll').off() : true; 
             $('body').toggleClass('no-scroll');
             $('.bar').toggleClass('animate');
             $('.header__mobile-menu nav').toggleClass('open');
+            $('.no-scroll').on('touchmove', function(e){ 
+                 e.preventDefault(); 
+            });
+            
         })
     // table link
 
@@ -79,6 +85,16 @@ $(document).ready(function(){
         $('.gallery-block__images a').fancybox(); 
         $('.gallery-inner__image').fancybox();
     }
+
+
+    // mobile safari bug issue for table on the genplan page (browser change money on phone links)
+
+    $('.price-col').each(function() {
+
+        $(this).html($(this).text())
+      
+
+    })
 
 
 });    

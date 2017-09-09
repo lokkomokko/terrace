@@ -622,7 +622,9 @@ body {
       text-align: center;
       flex-direction: column;
       background-color: #fff;
-      height: 100%; }
+      height: 100%;
+      z-index: 100;
+      overflow: hidden; }
     .header__mobile-menu .header__phone-number {
       font-size: 20px;
       margin-top: auto;
@@ -1190,7 +1192,8 @@ header.header-up {
     justify-content: space-between;
     margin-bottom: 1rem; }
   .home-block .left_column {
-    font-weight: bold; }
+    font-weight: bold;
+    padding-right: 5px; }
 
 .page-bottom-desc {
   width: 100%;
@@ -2582,7 +2585,8 @@ table tr td:first-of-type {
       font-size: 16px; }
 
   .news-section {
-    height: auto; }
+    height: auto;
+    margin-bottom: 58px; }
     .news-section__wrapper {
       flex-direction: column;
       padding-top: 65px;
@@ -2595,7 +2599,10 @@ table tr td:first-of-type {
       margin-bottom: 37px; }
 
   .news-item {
-    height: auto; }
+    height: auto;
+    margin-bottom: 36px; }
+    .news-item:last-of-type {
+      margin-bottom: 0; }
     .news-item__text {
       max-height: 100%; }
     .news-item__read-more {
@@ -2813,7 +2820,7 @@ table tr td:first-of-type {
     padding: 0; }
 
   .image-section__item {
-    flex-basis: 50%; }
+    flex-basis: 100%; }
     .image-section__item:nth-child(3) {
       margin-bottom: 48px; }
     .image-section__item:nth-child(4) {
@@ -2981,6 +2988,14 @@ table tr td:first-of-type {
     .form-section .callback--contact button {
       margin-top: 80px; }
     .form-section .callback--contact textarea {
-      height: 100px; } }
+      height: 100px; }
+
+  .homes-list .home-block {
+    flex-basis: 100%; }
+
+  .image-section--index-page .image-section__item__name {
+    font-size: 5rem; }
+  .image-section--index-page .image-section__item__text {
+    position: absolute; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -146,6 +146,8 @@
 		    flex-direction: column;
 		    background-color: #fff;
 		    height: 100%;
+		    z-index: 100;
+		    overflow: hidden;
 		}
 		.header__phone-number {
 			font-size: 20px;
