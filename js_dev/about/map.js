@@ -203,7 +203,7 @@ ymaps.ready(init);
 }
 
 
-if ($('.top-image__image').length >= 1) {
+if ($('.top-image--contact-page').length >= 1) {
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [59.965663, 30.306448],
