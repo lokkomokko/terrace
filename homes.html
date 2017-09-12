@@ -11,7 +11,7 @@
 	<title>Homes</title>
 	<meta name="POPFARM" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/main.css">
 	
 
@@ -95,10 +95,12 @@
 	<!-- top image for homes page -->
 	<div class="top-image">
 		<img class="top-image__image" src="img/06-funny-cat-wallpapercat-wallpaper.jpg" alt="">
-		<h1 class="top-image__title h1-title">
-			Готовые дома
-			в «Морских террасах»
-		</h1> 
+		<div class="container">
+			<h1 class="top-image__title h1-title">
+				Готовые дома
+				в «Морских террасах»
+			</h1> 			
+		</div>
 	</div>
 
 
@@ -357,17 +359,51 @@
 		</div>
 	</section>
 
-	<section class="page-bottom-desc">
-		<div class="page-bottom-desc__text">
-			<h2 class="big-title">О домах</h2>
-			<p class="text-content">
-				Из большого количества проектов были выбраны наиболее удачные, удовлетворяющие требованиям взыскательных домовладельцев. В данном разделе представлены готовые дома, построенные на индивидуальных земельных участках, а также проекты коттеджей, возводимых по различным строительным технологиям, различной площади и планировки. Указанные цены включают комплекс материалов и работ, соответствующих различным уровням готовности: от стадии «теплый контур» до «чистовой» отделки коттеджа / отделки «под ключ». Предлагаемые проекты домов соответствуют всем строительным нормам и экологическим  требованиям.				
-			</p>
+	<section class="page-bottom-desc page-bottom-desc--homes-page">
+		<div class="container">
+			<div class="page-bottom-desc__text">
+				<h2 class="big-title">О домах</h2>
+				<p class="text-content">
+					Из большого количества проектов были выбраны наиболее удачные, удовлетворяющие требованиям взыскательных домовладельцев. В данном разделе представлены готовые дома, построенные на индивидуальных земельных участках, а также проекты коттеджей, возводимых по различным строительным технологиям, различной площади и планировки. Указанные цены включают комплекс материалов и работ, соответствующих различным уровням готовности: от стадии «теплый контур» до «чистовой» отделки коттеджа / отделки «под ключ». Предлагаемые проекты домов соответствуют всем строительным нормам и экологическим  требованиям.				
+				</p>
+			</div>			
 		</div>
 		<div class="page-bottom-desc__image">
 			<img src="img/hom1.png" alt="">
 		</div>
 	</section>
+
+	<!-- callback form -->
+
+		<div class="callback callback--index">
+			<div class="callback__top">
+				<div class="title">Обратный звонок</div>
+				
+					<div class="close">
+						<svg class="icon icon-close">
+							<use xlink:href="img/symbol/sprite.svg#close"><use/>	
+						</svg>
+					</div>
+			</div>
+			<form action="">
+				<label>Ваше имя</label>
+					<input type="text" name="name">
+				<label>Телефон</label>
+					<input id="phone" type="text" name="phone">
+				<div class="agree">
+				    <label class="control control-checkbox">
+				            <input type="checkbox"/>
+				        <div class="control_indicator"></div>
+				    </label>		
+					<span>
+						Даю согласие на обработку, хранение и распространение
+						персональных данных				
+					</span>
+				</div>
+				<button disabled="disabled" type="submit">Отправить</button>
+			</form>
+		</div>
+
 
 	<!-- footer -->
 	<footer class="footer">

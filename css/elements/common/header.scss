@@ -8,7 +8,7 @@
 	height: 175px;
 	background-color: rgba(255,255,255, 0.9);
 	border-bottom: 4px solid $brownColor;
-	z-index: 40;
+	z-index: 100;
 	will-change: transform;
 	&__wrap {
 		display: flex;
@@ -52,7 +52,7 @@
 	    padding-top: 17px;
 	    padding-right: 27px;
         padding-bottom: 14px;
-		border-right: 2px solid rgba(0,0,0,.5);
+		border-right: 1px solid rgba(0,0,0,.1);
 		.icon {
 			margin-bottom: 27px;
 		}
@@ -187,6 +187,16 @@ $bar-spacing: 8px;
   width: $bar-width;
 	height: $bar-height + $bar-spacing*2;
 	cursor: pointer;
+	position: relative;
+	&:after {
+		content: '';
+		left: -70px;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		right: 0;
+
+	}
 }
 
 .bar,

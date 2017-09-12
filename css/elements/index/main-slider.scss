@@ -37,7 +37,13 @@
 			p {
 				font-size: 22px;
 			}
-			span {
+			.container {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+			}
+			.main-slider__item__separator, .main-slider__item__more-link {
 				margin-top: auto;
 				text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
 				letter-spacing: 0.125rem;

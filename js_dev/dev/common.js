@@ -33,5 +33,13 @@
 
 //= ../common/sticky-header.js
 
+/*
+ * yandex API maps
+ */
+
+//= ../about/map.js
+
+
+
 
 

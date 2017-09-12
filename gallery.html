@@ -11,11 +11,11 @@
 	<title>Gallery</title>
 	<meta name="POPFARM" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/main.css">
-	
-	<!-- style for genplan -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+	<!-- style for genplan -->
+	
 	 <link rel="stylesheet" href="js/genplan_module/style.css">
 
 </head>
@@ -96,11 +96,13 @@
 	</header>	
 
 	<div class="top-image">
-		<img class="top-image__image" src="img/n1.png" alt="">		
+		<img class="top-image__image"  src="img/n1.png" alt="">		
 
-		<h1 class="top-image__title h1-title">
-			Фото
-		</h1> 
+		<div class="container">
+			<h1 class="top-image__title h1-title">
+				Фото
+			</h1> 			
+		</div>
 	</div>
 
 	<!-- gallery block wrapper -->
@@ -119,16 +121,16 @@
 			</div>
 			<div class="gallery-block__images">
 				<div class="gallery-block__big-image">
-					<a href="img/ga1.png">
-						<img src="img/ga1.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga1.png"  data-caption="17.02 <br> Описание фото">
+						<img  src="img/ga1.png" alt="">
 					</a>
 				</div>	
 				<div class="gallery-block__little-images-wrap">
-					<a href="img/ga2.png" class="single-img">
-						<img src="img/ga2.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga2.png" class="single-img">
+						<img  src="img/ga2.png" alt="">
 					</a>
-					<a href="img/ga3.png" class="single-img">
-						<img src="img/ga3.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga3.png" class="single-img">
+						<img  src="img/ga3.png" alt="">
 					</a>					
 					
 				</div>
@@ -148,22 +150,22 @@
 			</div>
 			<div class="gallery-block__images">
 				<div class="gallery-block__big-image">
-					<a href="img/ga8.png">
-						<img src="img/ga8.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga8.png">
+						<img  src="img/ga8.png" alt="">
 					</a>
 				</div>	
 				<div class="gallery-block__little-images-wrap">
-					<a href="img/ga4.png" class="single-img">
-						<img src="img/ga4.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga4.png" class="single-img">
+						<img  src="img/ga4.png" alt="">
 					</a>
-					<a href="img/ga5.png" class="single-img">
-						<img src="img/ga5.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga5.png" class="single-img">
+						<img  src="img/ga5.png" alt="">
 					</a>	
-					<a href="img/ga6.png" class="single-img">
-						<img src="img/ga6.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga6.png" class="single-img">
+						<img  src="img/ga6.png" alt="">
 					</a>
-					<a href="img/ga6.png" class="single-img">
-						<img src="img/ga7.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga6.png" class="single-img">
+						<img  src="img/ga7.png" alt="">
 					</a>										
 					
 				</div>
@@ -185,28 +187,55 @@
 			</div>
 			<div class="gallery-block__images">
 				<div class="gallery-block__big-image">
-					<a href="img/ga11.png">
-						<img src="img/ga11.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga11.png">
+						<img  src="img/ga11.png" alt="">
 					</a>
 				</div>	
 				<div class="gallery-block__little-images-wrap">
-					<a href="img/ga10.png" class="single-img">
-						<img src="img/ga10.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga10.png" class="single-img">
+						<img  src="img/ga10.png" alt="">
 					</a>
-					<a href="img/ga9.png" class="single-img">
-						<img src="img/ga9.png" alt="">
+					<a data-caption="17.02 <br> Описание фото" href="img/ga9.png" class="single-img">
+						<img  src="img/ga9.png" alt="">
 					</a>					
 					
 				</div>
 			</div>
 		</div>	
 
-
-
-
-
 	</div>
 
+
+	<!-- callback form -->
+
+		<div class="callback callback--index">
+			<div class="callback__top">
+				<div class="title">Обратный звонок</div>
+				
+					<div class="close">
+						<svg class="icon icon-close">
+							<use xlink:href="img/symbol/sprite.svg#close"><use/>	
+						</svg>
+					</div>
+			</div>
+			<form action="">
+				<label>Ваше имя</label>
+					<input type="text" name="name">
+				<label>Телефон</label>
+					<input id="phone" type="text" name="phone">
+				<div class="agree">
+				    <label class="control control-checkbox">
+				            <input type="checkbox"/>
+				        <div class="control_indicator"></div>
+				    </label>		
+					<span>
+						Даю согласие на обработку, хранение и распространение
+						персональных данных				
+					</span>
+				</div>
+				<button disabled="disabled" type="submit">Отправить</button>
+			</form>
+		</div>
 
 	<!-- footer -->
 	<footer class="footer">

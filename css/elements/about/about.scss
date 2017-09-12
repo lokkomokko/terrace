@@ -37,9 +37,25 @@
 		width: 37.5vw;
 	}
 	.page-bottom-desc__text {
-		left: 0;
-		padding-left: 143px;
+		position: relative;
 		width: 66%;
+		overflow: initial;
+		box-shadow: none;
+		z-index: 1;
+		padding-left: 0;
+		top: 0;
+		margin-top: -93px;
+		&:after {
+			content: '';
+			position: absolute;
+			left: -40vw;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+			z-index: -1;
+			background-color: #fff;
+		}
 	}
 	.page-bottom-desc__image {
 		right: 0;
@@ -47,7 +63,7 @@
 		overflow: hidden;
 	    display: flex;
 	    justify-content: flex-end;
-	    top: -61px;		
+	    top: -61px;	
 	}
 	.text-content {
 		max-width: 615px;
@@ -82,6 +98,10 @@
 .about-last-text-block {
 	@extend .about-second-text-block;
 	min-height: 869px;
+	.page-bottom-desc__text {
+		box-sizing: content-box;
+		padding-right: 48px;
+	}
 	.page-bottom-desc__image {
 		width: 50%;
 		top: 38px;
@@ -120,5 +140,7 @@
 	}
 }
 .about-map {
-	margin-top: -54px;
+    margin-top: -67px;
+    width: 100%;
+    height: 659px;
 }

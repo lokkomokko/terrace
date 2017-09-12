@@ -8,10 +8,12 @@
     flex-direction: column;
     justify-content: flex-end;    
     z-index: 1;   
-
+    border-bottom: 4px solid $brownColor;
 	&:after {
 		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 		opacity: 0.6;		
+		z-index: -1;
+		
 		content: '';
 		@extend %abs-pos;
 	}    
@@ -24,7 +26,7 @@
 	&__title {
 		z-index: 2;
 		box-sizing: border-box;
-		padding-left: 152px;
+		// padding-left: 152px;
 		max-width: 1030px;
 		position: relative;
 		&:after {
@@ -33,13 +35,13 @@
 			background-color: #fff;
 			position: absolute;
 			top: 38px;
-			left: 0;
-			width: 118px;
+			left: -40vw;
+			width: 37vw;
 		}
 	}
 	&__breadcrumbs {
 		color: #fff;
-		padding-left: 152px;
+		// padding-left: 152px;
 		margin-bottom: 20px;
 		z-index: 1;
 		a {

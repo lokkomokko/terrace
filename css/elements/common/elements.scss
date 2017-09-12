@@ -1,9 +1,12 @@
 // elements stylesheet
 
 .main-wrapper {
+
     display: flex;
     min-height: 100vh;
     flex-direction: column;	
+    overflow-x: hidden;
+    position: relative;
     &--gray-bgc {
 		background-color: $backgroundColor;
     }
@@ -46,7 +49,7 @@
 	&:before {
 		content: '';
 		position: absolute;
-		height: 2px;
+		height: 1px;
 		top: 50%;
 		background-color: $fontColor;
 
@@ -106,6 +109,7 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 50px;	
+	z-index: -1;
 }
 .slide_button.prev {
 	transform: rotate(180deg);

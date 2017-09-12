@@ -9,8 +9,20 @@
 	display: flex;
 	flex-direction: column;
 	padding: 32px 22px;
-	box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.28);
+	// box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.28);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	&--index {
+		transform: translateX(300px);	
+	    position: fixed;
+	    top: 175px;
+	    right: 0;
+	    z-index: 10000;
+	    transition: 0.3s all;
+	    &.open {
+	    	transform: translateX(0);
+	    }
 
+	}
 	form {
 		display: flex;
 		flex-direction: column;
@@ -120,7 +132,7 @@
 				}
 				textarea {
 					resize: none;
-					width: 100%;
+					width: 98%;
 					height: 101px;
 					border: 1px solid $brownColor;
 					background-color: #ffffff;					
@@ -129,12 +141,26 @@
 	}	
 	&--contact {
 		height: 100%;
-		width: 66%;
+		width: 70%;
 		flex-direction: column;
 		box-sizing: border-box;
-		padding: 68px 90px 90px 149px;
+		padding: 68px 90px 90px 0;
 		margin-top: -124px;
 		border: none;
+		position: relative;
+		background-color: #fff;
+		z-index: 1;
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			z-index: -1;
+			left: -40vw;
+			top: 0;
+			bottom: 0;
+			background-color: #fff;
+			box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.28);
+		}
 		input {
 			width: 100%;
 			font-size: 13px;

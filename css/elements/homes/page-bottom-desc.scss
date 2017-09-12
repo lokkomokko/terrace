@@ -4,6 +4,9 @@
 	min-height: 678px;
 	margin-top: 93px;
     z-index: 1;
+    &--homes-page {
+    	background-color: #fff;
+    }
 	&__text {
 		overflow: hidden;
 		position: absolute;

@@ -11,9 +11,10 @@
 	<title>test</title>
 	<meta name="POPFARM" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/main.css">
 	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
 
 </head>
 
@@ -95,45 +96,47 @@
 	<!-- top image for inner home page -->
 	<div class="top-image">
 		<img class="top-image__image" src="img/1.png" alt="">
-		<div class="top-image__breadcrumbs">
-			<a href="">морские террасы</a> /
-			<a href="">дома</a> /
-		</div>
-		<h1 class="top-image__title h1-title">
-			Дом на участках 40-41
-		</h1> 
+		<div class="container">
+			<div class="top-image__breadcrumbs">
+				<a href="">морские террасы</a> /
+				<a href="">дома</a> /
+			</div>
+			<h1 class="top-image__title h1-title">
+				Дом на участках 40-41
+			</h1>			
+		</div> 
 	</div>
 
 	<div class="carousel">
 		<div class="carousel__wrapper container">
 
-			<div class="carousel__item">
+			<a href="img/h1.png" class="carousel__item">
 				<img src="img/h1.png" alt="">
-			</div>
+			</a>
 
-			<div class="carousel__item">
+			<a href="img/h2.png" class="carousel__item">
 				<img src="img/h2.png" alt="">
-			</div>
+			</a>
 
-			<div class="carousel__item">
+			<a href="img/h3.png" class="carousel__item">
 				<img src="img/h3.png" alt="">
-			</div>
+			</a>
 
-			<div class="carousel__item">
+			<a href="img/h4.png" class="carousel__item">
 				<img src="img/h4.png" alt="">
-			</div>			
+			</a>			
 
-			<div class="carousel__item">
+			<a href="img/h5.png" class="carousel__item">
 				<img src="img/h5.png" alt="">
-			</div>
+			</a>
 
-			<div class="carousel__item">
+			<a href="img/h6.png" class="carousel__item">
 				<img src="img/h6.png" alt="">
-			</div>						
+			</a>						
 
-			<div class="carousel__item">
+			<a href="img/orig.jpg" class="carousel__item">
 				<img src="img/orig.jpg" alt="">
-			</div>			
+			</a>
 		</div>
 	</div>
 	
@@ -225,6 +228,36 @@
 		</div>
 	</section>
 
+	<!-- callback form -->
+
+		<div class="callback callback--index">
+			<div class="callback__top">
+				<div class="title">Обратный звонок</div>
+				
+					<div class="close">
+						<svg class="icon icon-close">
+							<use xlink:href="img/symbol/sprite.svg#close"><use/>	
+						</svg>
+					</div>
+			</div>
+			<form action="">
+				<label>Ваше имя</label>
+					<input type="text" name="name">
+				<label>Телефон</label>
+					<input id="phone" type="text" name="phone">
+				<div class="agree">
+				    <label class="control control-checkbox">
+				            <input type="checkbox"/>
+				        <div class="control_indicator"></div>
+				    </label>		
+					<span>
+						Даю согласие на обработку, хранение и распространение
+						персональных данных				
+					</span>
+				</div>
+				<button disabled="disabled" type="submit">Отправить</button>
+			</form>
+		</div>
 
 	<!-- footer -->
 	<footer class="footer">
@@ -246,20 +279,12 @@
 	</footer>	
 </div>	
 
-<!-- slide-buttons -->
-<!-- <div class="slide_button prev">
-	<svg class="icon icon-arrow">
-		<use xlink:href="img/symbol/sprite.svg#arrow"><use/>	
-	</svg>	
-</div>
-<div class="slide_button next">
-	<svg class="icon icon-arrow">
-		<use xlink:href="img/symbol/sprite.svg#arrow"><use/>	
-	</svg>	
-</div> -->
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
 	<script src="js/common.js"></script>
+
 </body>
 </html>

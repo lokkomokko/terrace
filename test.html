@@ -97,7 +97,7 @@
 	</header>	
 
 	<div class="top-image top-image--contact-page">
-		<img class="top-image__image" src="img/map.jpeg" alt="">	
+		<div id="map" class="top-image__image"></div>	
 	</div>
 
 
@@ -171,6 +171,7 @@
 	</div>
 	
 	<div class="form-section">
+		<div class="container">
 			<div class="callback callback--contact">
 
 				<div class="callback--contact__top">
@@ -220,7 +221,8 @@
 					</div>
 
 				</form>
-			</div>	
+			</div>			
+		</div>	
 			
 			<div class="form-section__bottom-img">
 				<img src="img/ab1.png" alt="">
@@ -228,6 +230,36 @@
 
 	</div>
 
+	<!-- callback form -->
+
+		<div class="callback callback--index">
+			<div class="callback__top">
+				<div class="title">Обратный звонок</div>
+				
+					<div class="close">
+						<svg class="icon icon-close">
+							<use xlink:href="img/symbol/sprite.svg#close"><use/>	
+						</svg>
+					</div>
+			</div>
+			<form action="">
+				<label>Ваше имя</label>
+					<input type="text" name="name">
+				<label>Телефон</label>
+					<input id="phone" type="text" name="phone">
+				<div class="agree">
+				    <label class="control control-checkbox">
+				            <input type="checkbox"/>
+				        <div class="control_indicator"></div>
+				    </label>		
+					<span>
+						Даю согласие на обработку, хранение и распространение
+						персональных данных				
+					</span>
+				</div>
+				<button disabled="disabled" type="submit">Отправить</button>
+			</form>
+		</div>
 
 
 	<!-- footer -->
@@ -251,10 +283,16 @@
 </div>	
 
 
-
+	<!-- yandex maps api -->
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
 	<script src="js/common.js"></script>
+
+
+
+
 </body>
 </html>

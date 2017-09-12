@@ -18,14 +18,14 @@
 			draggable: false, 
             responsive: [
                 {
-                  breakpoint: 769,
+                  breakpoint: 1025,
                   settings: {
                     slidesToShow: 4,
                     slidesToScroll: 1
                   }
                 },                        
                 {
-                  breakpoint: 321,
+                  breakpoint: 401,
                   settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1

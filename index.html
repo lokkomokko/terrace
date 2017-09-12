@@ -11,7 +11,7 @@
 	<title>Terrace</title>
 	<meta name="POPFARM" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
@@ -97,15 +97,17 @@
 	</header>	
 
 <!-- slider on main page -->
-	<div class="main-slider">
+	<div class="main-slider ">
 		<div class="main-slider__wrapper">
 			<div class="main-slider__item">
 				<img class="main-slider__item__image" src="http://housesdesign.ru/bundles/sitehouses/user_images/big/6f/c5/88e79af63b42d940fcc36bedea93.jpg" alt="">
 				<a href="" class="main-slider__item__desc">
-					<h2>Последние участки в продаже</h2>
-					<p>Специальные условия</p>
-					<span class="main-slider__item__separator"></span>
-					<span class="main-slider__item__more-link">ПОДРОБНЕЕ »</span>		
+					<span class="container">
+						<h2>Последние участки в продаже</h2>
+						<p>Специальные условия</p>
+						<span class="main-slider__item__separator"></span>
+						<span class="main-slider__item__more-link">ПОДРОБНЕЕ »</span>								
+					</span>
 				</a>
 
 			</div>
@@ -113,20 +115,24 @@
 			<div href="" class="main-slider__item">
 				<img class="main-slider__item__image" src="http://remoo.ru/wp-content/uploads/2015/09/terrasyi-i-verandyi-k-domu-foto-proektov-i-variantov-dizayna-10..jpg" alt="">
 				<a class="main-slider__item__desc">
-					<h2>Чудесная терраса с видом на море</h2>
-					<p>Хорошие скидки</p>
-					<span class="main-slider__item__separator"></span>
-					<span class="main-slider__item__more-link">ПОДРОБНЕЕ »</span>				
+					<span class="container">
+						<h2>Чудесная терраса с видом на море</h2>
+						<p>Хорошие скидки</p>
+						<span class="main-slider__item__separator"></span>
+						<span class="main-slider__item__more-link">ПОДРОБНЕЕ »</span>						
+					</span>				
 				</a>
 			</div>	
 
 			<div class="main-slider__item">
 				<img class="main-slider__item__image" src="http://bottegabenedetti.com/assets/images/frameless-glazing-terras.jpg" alt="">
 				<a href="" class="main-slider__item__desc">
-					<h2>Домик на краю земли</h2>
-					<p>Специальные условия</p>
-					<span class="main-slider__item__separator"></span>
-					<span class="main-slider__item__more-link">ПОДРОБНЕЕ »</span>				
+					<span class="container">
+						<h2>Домик на краю земли</h2>
+						<p>Специальные условия</p>
+						<span class="main-slider__item__separator"></span>
+						<span class="main-slider__item__more-link">ПОДРОБНЕЕ »</span>						
+					</span>				
 				</a>
 			</div>			
 		</div>
@@ -234,6 +240,37 @@
 </section>
 
 
+	<!-- callback form -->
+
+		<div class="callback callback--index">
+			<div class="callback__top">
+				<div class="title">Обратный звонок</div>
+				
+					<div class="close">
+						<svg class="icon icon-close">
+							<use xlink:href="img/symbol/sprite.svg#close"><use/>	
+						</svg>
+					</div>
+			</div>
+			<form action="">
+				<label>Ваше имя</label>
+					<input type="text" name="name">
+				<label>Телефон</label>
+					<input id="phone" type="text" name="phone">
+				<div class="agree">
+				    <label class="control control-checkbox">
+				            <input type="checkbox"/>
+				        <div class="control_indicator"></div>
+				    </label>		
+					<span>
+						Даю согласие на обработку, хранение и распространение
+						персональных данных				
+					</span>
+				</div>
+				<button disabled="disabled" type="submit">Отправить</button>
+			</form>
+		</div>
+
 <!-- footer -->
 <footer class="footer">
 	<div class="footer__wrapper container">
@@ -252,6 +289,9 @@
 
 	</div>
 </footer>
+
+
+
 
 </div>
 
