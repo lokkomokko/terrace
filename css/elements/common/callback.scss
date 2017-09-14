@@ -9,17 +9,18 @@
 	display: flex;
 	flex-direction: column;
 	padding: 32px 22px;
+	will-change: transform;
 	// box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.28);
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 	&--index {
 		transform: translateX(300px);	
 	    position: fixed;
-	    top: 175px;
-	    right: 0;
+		top: 73px;
+		right: 0;
 	    z-index: 10000;
 	    transition: 0.3s all;
 	    &.open {
-	    	transform: translateX(0);
+	    	transform: translateX(-232px);
 	    }
 
 	}
@@ -60,7 +61,7 @@
 		margin-bottom: 7px;
 	}
 	input {
-		width: 227px;
+		width: 100%;
 		min-height: 40px;
 		font-size: 14px;
 		border: 1px solid #bd9c69;		

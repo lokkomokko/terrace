@@ -18,6 +18,9 @@
 .about-first-text-block {
 	min-height: 531px;
 	margin-top: 0;
+	.big-title {
+		white-space: nowrap;
+	}
 	.page-bottom-desc__text {
 		margin-bottom: 77px;
 		width: 58%;

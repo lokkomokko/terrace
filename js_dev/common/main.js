@@ -115,7 +115,9 @@ $(document).ready(function(){
     $('.callback--index .close').click(function() {
         $('.callback--index').toggleClass('open')
     })
-
+    $(window).scroll(function() {
+        $('.callback--index').hasClass('open') ? $('.callback--index').removeClass('open') : 0
+    })
 
     // fixed callblock on home page
     if ($('.callback--home').length >= 1) {

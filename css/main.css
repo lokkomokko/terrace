@@ -375,6 +375,9 @@ body {
     top: 50%;
     background-color: #595959; }
 
+.fancybox-button--thumbs {
+  display: none !important; }
+
 .h1-title {
   font-family: "PT Serif", serif;
   color: #fff;
@@ -796,16 +799,17 @@ header.header-up {
   display: flex;
   flex-direction: column;
   padding: 32px 22px;
+  will-change: transform;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
   .callback--index {
     transform: translateX(300px);
     position: fixed;
-    top: 175px;
+    top: 73px;
     right: 0;
     z-index: 10000;
     transition: 0.3s all; }
     .callback--index.open {
-      transform: translateX(0); }
+      transform: translateX(-232px); }
   .callback form {
     display: flex;
     flex-direction: column;
@@ -836,7 +840,7 @@ header.header-up {
     font-weight: bold;
     margin-bottom: 7px; }
   .callback input {
-    width: 227px;
+    width: 100%;
     min-height: 40px;
     font-size: 14px;
     border: 1px solid #bd9c69;
@@ -1699,6 +1703,8 @@ table tr td:first-of-type {
 .about-first-text-block {
   min-height: 531px;
   margin-top: 0; }
+  .about-first-text-block .big-title {
+    white-space: nowrap; }
   .about-first-text-block .page-bottom-desc__text {
     margin-bottom: 77px;
     width: 58%; }
@@ -2110,10 +2116,10 @@ table tr td:first-of-type {
 
 @media screen and (max-width: 1440px) {
   .main-wrapper {
-    width: 1440px;
+    width: 100%;
     overflow-x: hidden;
     position: relative; } }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1140px) {
   .main-wrapper {
     width: 100%; }
 
@@ -2259,7 +2265,7 @@ table tr td:first-of-type {
   .form-section__bottom-img {
     width: 100%;
     max-width: 654px; } }
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 940px) and (min-width: 768px) {
   .image-section__wrapper {
     padding: 66px 0 74px; }
   .image-section__item__name {
@@ -2280,7 +2286,7 @@ table tr td:first-of-type {
     background-position: 0px -306px; }
   .png-sprite__4 {
     background-position: 0px -100px; } }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 940px) {
   .callback--contact:after {
     left: -40vw;
     right: -40vw; }
