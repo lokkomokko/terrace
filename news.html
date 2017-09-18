@@ -109,12 +109,12 @@
 		<div class="news-filter__wrapper container">
 			<div class="row">
 				<div class="type-name">Категории</div>
-				<div class="col active">Все</div>
+				<a href="s" class="col active">Все</a>
 				<div class="wrap">
-					<div class="col">Спецпреложения  и акции</div>
-					<div class="col">Показы участков</div>
-					<div class="col">Инфраструктура</div>
-					<div class="col">Важно</div>					
+					<a href="" class="col">Спецпреложения  и акции</a>
+					<a href="" class="col">Показы участков</a>
+					<a href="" class="col">Инфраструктура</a>
+					<a href="" class="col">Важно</a>					
 				</div>
 			</div>	
 			<div class="row">
@@ -145,9 +145,10 @@
 				<h2 class="news-item__name">
 					Запись на просмотр участков
 				</h2>
-				<p class="news-item__text">
-					Просмотры участков в коттеджном поселке «Морские террасы» осуществляются по предварительной записи по телефону отдела продаж (812) 331-51-21. Мы будем рады ответить на все возникшие вопросы.
-				</p>
+				<div class="news-item__text">
+					<p>Просмотры участков в коттеджном поселке «Морские террасы» осуществляются по предварительной записи по телефону отдела продаж (812) 331-51-21. Мы будем рады ответить на все возникшие вопросы.</p>
+					<p>Просмотры участков в коттеджном поселке «Морские террасы» осуществляются по предварительной записи по телефону отдела продаж (812) 331-51-21. Мы будем рады ответить на все возникшие вопросы.</p>
+				</div>
 				<span class="news-item__read-more read-more">Читать далее »</span>
 			</div>
 		</a>
@@ -271,25 +272,31 @@
 		</a>												
 	</section>
 	<div class="news-breadcrumbs container">
-		<div class="news-breadcrumbs__pages-numbers">
 
-			<a class="current" href="">1</a>
-			<a href="">2</a>
-			<a href="">3</a>
-			<a href="">4</a>
-			<a href="">5</a>
-			<a href="">6</a>
-			<a href="">7</a>
-			<a href="">8</a>
-			<a href="">9</a>
-			<a href="">10</a>
-			<a href="">...</a>
-			<a href="">16</a>
-			<a href="">17</a>
-		</div>
-		<a href="" class="news-breadcrumbs__next-page">
-			Следующая »			
-		</a>	
+<ul class="ul-reset news-breadcrumbs__pages-numbers">
+   <li class="news-breadcrumbs__link link-pages active"><a href="#">1</a></li>
+   <li class="news-breadcrumbs__link link-pages"><a href="#">2</a></li>
+   <li class="news-breadcrumbs__link continue"><span>...</span></li>
+   <li class="news-breadcrumbs__link link-pages"><a href="#">150</a></li>
+   <li class="news-breadcrumbs__next-page next"><a href="#">Следующая</a></li>
+</ul>	
+<!-- 		<div class="news-breadcrumbs__pages-numbers">
+
+			<a class="news-breadcrumbs__link" class="current" href="">1</a>
+			<a class="news-breadcrumbs__link" href="">2</a>
+			<a class="news-breadcrumbs__link" href="">3</a>
+			<a class="news-breadcrumbs__link" href="">4</a>
+			<a class="news-breadcrumbs__link" href="">5</a>
+			<a class="news-breadcrumbs__link" href="">6</a>
+			<a class="news-breadcrumbs__link" href="">7</a>
+			<a class="news-breadcrumbs__link" href="">8</a>
+			<a class="news-breadcrumbs__link" href="">9</a>
+			<a class="news-breadcrumbs__link" href="">10</a>
+			<a class="news-breadcrumbs__link" href="">...</a>
+			<a class="news-breadcrumbs__link" href="">16</a>
+			<a class="news-breadcrumbs__link" href="">17</a>
+		</div> -->
+
 	</div>
 
 	<!-- callback form -->

@@ -12,7 +12,7 @@ function init () {
         referencePoints: [
             
             [59.991394, 30.159678],
-            "коттеджный поселок Морские Террасы"
+            [60.171136, 29.281416]
         ],
         // Параметры маршрутизации.
         params: {
@@ -50,7 +50,7 @@ function init () {
         routeStrokeWidth: 2,
         routeStrokeColor: "#000088",
         routeActiveStrokeWidth: 6,
-        routeActiveStrokeColor: "#E63E92",
+        routeActiveStrokeColor: "#009bc0",
 
         // Внешний вид линии пешеходного маршрута.
         routeActivePedestrianSegmentStrokeStyle: "solid",               
@@ -158,7 +158,7 @@ function init () {
     }, {
         // Задаем опции геообъекта.
         // Цвет заливки.
-        fillColor: '#E63E92',
+        fillColor: '#009bc0',
         opacity: 0.5,
         // Ширина обводки.
         strokeWidth: 0
@@ -173,7 +173,7 @@ function init () {
             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         ),
 
-        myPlacemark = new ymaps.Placemark([60.162157, 29.287869], {
+        myPlacemark = new ymaps.Placemark([60.172354, 29.281138], {
             hintContent: 'Коттеджный поселок Морские Террасы',
             // balloonContent: 'Это красивая метка'
         }, {
@@ -186,7 +186,7 @@ function init () {
             iconImageSize: [130, 70],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-60, -80]
+            iconImageOffset: [-60, -50]
         }),
 
 

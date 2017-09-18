@@ -110,15 +110,17 @@
 	display: flex;
 	position: relative;
 	margin-top: auto;
+
+	&__link {
+		margin: 0 3px;
+		&:hover {
+			color: $blueColorHover;
+		}
+	}
 	&__pages-numbers {
 		font-size: 14px;
 		margin: auto;
-		a {
-			margin: 0 3px;
-			&:hover {
-				color: $blueColorHover;
-			}
-		}
+		display: flex;
 		.current {
 			color: $fontColor;
 			&:hover {

@@ -1882,13 +1882,14 @@ table tr td:first-of-type {
   display: flex;
   position: relative;
   margin-top: auto; }
+  .news-breadcrumbs__link {
+    margin: 0 3px; }
+    .news-breadcrumbs__link:hover {
+      color: #62c5de; }
   .news-breadcrumbs__pages-numbers {
     font-size: 14px;
-    margin: auto; }
-    .news-breadcrumbs__pages-numbers a {
-      margin: 0 3px; }
-      .news-breadcrumbs__pages-numbers a:hover {
-        color: #62c5de; }
+    margin: auto;
+    display: flex; }
     .news-breadcrumbs__pages-numbers .current {
       color: #595959; }
       .news-breadcrumbs__pages-numbers .current:hover {
