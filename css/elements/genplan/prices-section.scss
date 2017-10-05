@@ -12,6 +12,7 @@
 		width: 994px;
 		z-index: 1;
 		margin-top: -216px;
+	    padding-bottom: 20px;
 		&:after {
 			content: '';
 			position: absolute;
@@ -54,6 +55,7 @@
 			@extend %abs-pos;
 			z-index: -1;
 			left: -40vw;
+			right: 1px;
 	    }
 		input {
 			height: 32px;
@@ -144,6 +146,19 @@ table {
 
   	}
   }
+  tbody > tr:first-of-type {
+  	cursor: pointer;
+  	&:hover {
+  		background-color: $backgroundColor;
+  		.read-more {
+  			color: $brownColor;
+  			&:hover {
+  				color: $brownColorHover;
+  			}
+  		}
+
+  	}
+  }  
   tr:last-of-type {
   	td {
   		border-color: transparent;

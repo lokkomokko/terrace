@@ -27,6 +27,7 @@
 
 //= ../common/main.js
 
+//= ../common/polyfill.js
 /*
  * sticky header
  */

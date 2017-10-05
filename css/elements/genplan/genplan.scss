@@ -137,7 +137,7 @@
 			.rule_1:before{background-color: $blueColor;}
 			.rule_2:before{background-color: #c4b999;}
 			.rule_3:before{background-color: #7bb83b;}
-
+			.rule_4:before{background-color: #a5cad9;}
 			&:before {
 				content: '';
 				position: absolute;
@@ -189,5 +189,23 @@
 	#pg, .genplan__bg, .container {
 		display: block !important;
 		width: 760px !important;
+	}
+}
+.filter-drop-btn {
+	color: $blueColor;
+	text-decoration: underline;
+	position: relative;
+	margin-left: 30px;
+	cursor: pointer;
+	&:hover {
+		color: $blueColorHover;
+	}
+	&:before {
+		color: $fontColor;
+		text-decoration: none;
+		content: '|';
+		position: absolute;
+		bottom: 0;
+		left: -17px;
 	}
 }

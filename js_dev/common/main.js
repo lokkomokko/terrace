@@ -1,9 +1,37 @@
 $(document).ready(function(){
 
 	svg4everybody({});
-
+    objectFitImages()
 	// phone mask
-	$('#phone').mask("+7 ( 999 ) 999 - 99 - 99", {placeholder:"_"});
+	$('input[name=phone]').mask("+7 ( 999 ) 999 - 99 - 99", {placeholder:"_"});
+
+    var getCsrfToken = function () {
+       return $('meta[name=csrf-token]').attr('content');
+    }
+
+    $('.callback--index button').click(function(e) {
+        e.preventDefault()
+        $.ajax({
+          url: '/send-callback-form',
+          type: "POST",
+          data: {
+            name: $('.callback--index input[name=name]').val(),
+            phone: $('.callback--index input[name=phone]').val(),
+            '_csrf-frontend': getCsrfToken()
+        
+          },
+          success: function() {
+               if (data && data.status === 'success') {
+                   alert(data.message);
+               } else if (data && data.status === 'error') {
+                   alert('Произошла ошибка: ' + data.message);
+               }
+            },
+          error: function() {
+            alert('Неполадки с сервером, попробуйте позже')
+          }
+        });
+    })    
 
     // button access check
     $('.agree input').click(function() {
@@ -31,9 +59,24 @@ $(document).ready(function(){
         })
     // table link
 
-    $('tr[data-href]').on("click", function() {
-        document.location = $(this).data('href');
+    $('.prices-section__table').on("click", 'tr[data-href]', function() {
+        
+        if ($('.callback--reserve').hasClass('callback--reserve--open')) {
+            $('.callback--reserve').removeClass('callback--reserve--open')
+            setTimeout(function() {
+                $('.callback--reserve').addClass('callback--reserve--open')
+            }, 300)
+        }
+        else {
+            $('.callback--reserve').addClass('callback--reserve--open')
+        }
     });    
+
+    $('#callback-cancel').on("click", function() {
+        
+        $('.callback--reserve').removeClass('callback--reserve--open')
+    });        
+
 
     // genplan mobile iframe
 
@@ -139,4 +182,36 @@ $(document).ready(function(){
         
     }
 
+    // contact form
+
+        if ($('.callback--contact').length >= 1) {
+
+
+            $('.callback--contact button').click(function(e) {
+                e.preventDefault()
+                $.ajax({
+                  url: '/send-contact-message',
+                  type: "POST",
+                  data: {
+                    name: $('.callback--contact input[name=name]').val(),
+                    phone: $('.callback--contact input[name=phone]').val(),
+                    mail: $('.callback--contact input[name=email]').val(),
+                    comment: $('.callback--contact textarea').val(),
+                    '_csrf-frontend': getCsrfToken()
+                
+                  },
+                  success: function() {
+                       if (data && data.status === 'success') {
+                           alert(data.message);
+                       } else if (data && data.status === 'error') {
+                           alert('Произошла ошибка: ' + data.message);
+                       }
+                    },
+                  error: function() {
+                    alert('Неполадки с сервером, попробуйте позже')
+                  }
+                });
+            })
+        }   
+   
 });    

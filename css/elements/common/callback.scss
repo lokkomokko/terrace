@@ -12,6 +12,7 @@
 	will-change: transform;
 	// box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.28);
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
 	&--index {
 		transform: translateX(300px);	
 	    position: fixed;
@@ -210,6 +211,43 @@
 			margin-bottom: 63px;
 		}	
 	}
+	&--reserve {
+		width: 295px;
+		height: 414px;
+		padding-bottom: 0;
+		position: fixed;
+		right: 0;
+		top: calc(50% - 207px);
+		z-index: 10000;
+		transform: translateX(100%);
+		transition: 0.4s;
+		&--open {
+			transform: translateX(0);
+		}
+		button {
+			width: 100%;
+		}
+		.callback__top {
+			flex-direction: column;
+			margin-bottom: 37px;
+		    align-items: center;
+		}
+		.title {
+			font-size: 20px;
+			line-height: 18px;
+			margin-bottom: 7px;
+		}
+		#callback-cancel {
+			color: $blueColor;
+		    width: 100%;
+		    text-align: center;
+		    padding-top: 18px;
+		    cursor: pointer;
+		    &:hover {
+		    	color: $blueColorHover;
+		    }
+		}
+	}	
 
 }
 
